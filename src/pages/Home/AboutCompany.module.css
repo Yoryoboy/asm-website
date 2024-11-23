@@ -1,8 +1,27 @@
 .aboutCompany {
-  min-height: 400px;
+  padding: 80px 0;
   background-color: #f5f5f5;
-  padding: 80px 120px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  row-gap: 30px;
+  grid-template-columns: repeat(3, 400px);
+  grid-template-rows: repeat(2, 150px);
+  justify-content: center;
+  align-self: center;
+  align-content: center;
+  align-items: start;
+  column-gap: 35px;
+  row-gap: 15px;
+}
+
+@media (max-width: 1270px) {
+  .aboutCompany {
+    grid-template-columns: repeat(2, 400px);
+    grid-template-rows: repeat(3, 150px);
+  }
+}
+
+@media (max-width: 900px) {
+  .aboutCompany {
+    grid-template-columns: repeat(1, 400px);
+    grid-template-rows: repeat(6, 150px);
+  }
 }

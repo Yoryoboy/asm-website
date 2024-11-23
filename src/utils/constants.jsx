@@ -32,26 +32,25 @@ export const ABOUT_COMPANY = [
   {
     icon: <GrUserWorker style={iconStyle} />,
     title: "Calculated Inspections",
-    subtitle:
-      "We are as comfortable running job-site inspections, as punching out stress calculations.",
+    subtitle: "We excel at both job-site inspections and stress calculations.",
   },
   {
     icon: <HiOutlineWrenchScrewdriver style={iconStyle} />,
     title: "Design Expertise",
     subtitle:
-      "The local landscape bears all our design expertise: residential, commercial, institutional, and medical structures, including mid and high-rise structures.",
+      "Residential, commercial, institutional, including mid and high-rises.",
   },
   {
     icon: <HiOutlineUserGroup style={iconStyle} />,
     title: "Trusted Quality",
     subtitle:
-      "ASM thrives on our commitment to quality, and reliable proposals to submit to owners, architects, construction companies, etc.",
+      "Quality and reliable proposals for owners, architects, and builders.",
   },
   {
     icon: <GrMoney style={iconStyle} />,
     title: "Value Engineering",
     subtitle:
-      "Understanding that our client's goal may be to minimize costs, ASM delivers quality projects to our clientele to best meet their cost objectives.",
+      "ASM delivers quality projects that align with our clients' cost goals.",
   },
   {
     icon: <HiOutlineShieldCheck style={iconStyle} />,

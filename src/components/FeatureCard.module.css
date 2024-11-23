@@ -3,9 +3,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-}
-
-.featureCardIcon {
+  gap: 25px;
 }
 
 .featureCardIcon div {
@@ -30,7 +28,7 @@ svg {
 }
 
 .featureCardContent h1 {
-  font-size: 24px;
+  font-size: 22px;
   letter-spacing: 0.05em;
   font-weight: 500;
   line-height: 1.2;
