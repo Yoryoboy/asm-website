@@ -3,7 +3,7 @@
   background-color: #f5f5f5;
   display: grid;
   grid-template-columns: repeat(3, auto);
-  grid-template-rows: repeat(2, 300px);
+  grid-template-rows: repeat(2, auto);
   row-gap: 50px;
   justify-content: center;
   align-items: start;
@@ -12,13 +12,13 @@
 @media (max-width: 965px) {
   .servicesGrid {
     grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(3, 300px);
+    grid-template-rows: repeat(3, auto);
   }
 }
 
 @media (max-width: 700px) {
   .servicesGrid {
     grid-template-columns: auto;
-    grid-template-rows: repeat(6, 300px);
+    grid-template-rows: repeat(6, auto);
   }
 }

@@ -1,17 +1,17 @@
 import ServiceItem from "./ServiceItem";
-import { ABOUT_COMPANY } from "../../utils/constants";
+import { SERVICES } from "../../utils/constants";
 
 import styles from "./ServicesGrid.module.css";
 
 function ServicesGrid() {
   return (
     <section className={styles.servicesGrid}>
-      {ABOUT_COMPANY.map((service) => (
+      {SERVICES.map((service) => (
         <ServiceItem
           key={service.id}
           title={service.title}
-          subtitle={service.subtitle}
-          icon={service.icon}
+          description={service.description}
+          img={service.image}
         />
       ))}
     </section>

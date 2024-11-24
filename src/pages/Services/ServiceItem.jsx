@@ -2,12 +2,14 @@
 
 import styles from "./ServiceItem.module.css";
 
-function ServiceItem({ title, subtitle, icon }) {
+function ServiceItem({ title, description, img }) {
   return (
     <article className={styles.serviceItem}>
-      <div className={styles.serviceItemIcon}>{icon}</div>
+      <div className={styles.serviceItemImgContainer}>
+        <img src={img} alt={title} className={styles.serviceItemImg} />
+      </div>
       <h1>{title}</h1>
-      <p>{subtitle}</p>
+      <p>{description}</p>
       <a href="#">READ MORE &rarr;</a>
     </article>
   );
