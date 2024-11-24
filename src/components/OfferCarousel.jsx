@@ -29,7 +29,7 @@ function OfferCarousel() {
   const groupedItems = groupCarouselItems(SERVICES, itemsPerPage);
 
   return (
-    <Carousel autoplay arrows>
+    <Carousel arrows>
       {groupedItems.map((group, index) => (
         <div key={index} className={styles.offerCarouselItem}>
           {group.map((item) => (
