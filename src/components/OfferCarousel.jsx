@@ -11,9 +11,9 @@ function OfferCarousel() {
 
   useEffect(() => {
     function handleResize() {
-      if (window.innerWidth <= 768) {
+      if (window.innerWidth <= 960) {
         setItemsPerPage(1); // Móvil: 1 elemento
-      } else if (window.innerWidth <= 1024) {
+      } else if (window.innerWidth <= 1400) {
         setItemsPerPage(2); // Tablets: 2 elementos
       } else {
         setItemsPerPage(3); // Escritorio: 3 elementos
@@ -29,7 +29,7 @@ function OfferCarousel() {
   const groupedItems = groupCarouselItems(SERVICES, itemsPerPage);
 
   return (
-    <Carousel arrows>
+    <Carousel autoplay arrows>
       {groupedItems.map((group, index) => (
         <div key={index} className={styles.offerCarouselItem}>
           {group.map((item) => (
