@@ -27,8 +27,8 @@ function GalleryItem({ image, title }) {
     setHoverDirection(getHoverDirection(event, event.target));
   };
 
-  const handleMouseLeave = (e) => {
-    setHoverDirection(getHoverDirection(e, e.currentTarget));
+  const handleMouseLeave = (event) => {
+    setHoverDirection(getHoverDirection(event, event.target));
   };
 
   return (

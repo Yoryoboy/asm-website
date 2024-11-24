@@ -1,0 +1,145 @@
+.footer {
+  background-image: url("../assets/images/footer-img.webp");
+  background-size: cover;
+  background-position: center;
+  padding-left: 20%;
+}
+
+.footerContent {
+  display: flex;
+  color: #fff;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.quickLinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.quickLinks ul {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  row-gap: 15px;
+}
+
+.socialLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-top: 55px;
+}
+
+.socialLink a {
+  width: 30px;
+  height: 30px;
+}
+
+.getInTouch {
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  min-height: 400px;
+}
+
+.getInTouch div {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+.getInTouch svg {
+  stroke-width: 1.2;
+  width: 25px;
+  stroke: #fff;
+}
+
+.getInTouch li {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 25px;
+  margin-bottom: 20px;
+}
+
+.getInTouch h3 {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 1.33;
+}
+
+.quickLinks h1,
+.getInTouch h1 {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  min-width: 310px;
+  padding-top: 50px;
+  padding-bottom: 25px;
+  padding-left: 23px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 20px;
+}
+
+.quickLinks ul,
+.getInTouch ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 25px;
+}
+
+.quickLinks li,
+.getInTouch li {
+  padding-left: 23px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.075em;
+}
+
+.getInTouch a {
+  margin-top: 30px;
+  border: 1px solid white;
+  width: fit-content;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: #ff5200;
+  border-color: #ff5200;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.getInTouch a:hover {
+  background-color: #fee25f;
+  border-color: #fee25f;
+  color: black;
+}
+
+@media (max-width: 900px) {
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 665px) {
+  .footerContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .socialLink {
+    justify-content: start;
+    padding-left: 20px;
+  }
+}
