@@ -1,5 +1,5 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
-import image from "../assets/images/Engineering Design.jpg";
 import styles from "./GalleryItem.module.css";
 
 function getHoverDirection(event, element) {
@@ -20,7 +20,7 @@ function getHoverDirection(event, element) {
   return "right";
 }
 
-function GalleryItem() {
+function GalleryItem({ image, title }) {
   const [hoverDirection, setHoverDirection] = useState(null);
 
   const handleMouseEnter = (event) => {
@@ -39,7 +39,7 @@ function GalleryItem() {
     >
       <img src={image} alt="TITLE" className={styles.galleryImage} />
       <div className={`${styles.overlay} ${styles[hoverDirection]}`}>
-        IMAGEN DE PRUEBA
+        <h1>{title}</h1>
       </div>
     </div>
   );
