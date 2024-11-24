@@ -1,0 +1,25 @@
+.offerCarouselItem {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  height: 380px;
+}
+
+:global(.slick-arrow) {
+  color: red !important;
+  width: 40px !important;
+}
+
+:global(.slick-arrow::after) {
+  width: 35px !important;
+  height: 35px !important;
+}
+
+:global(.slick-next) {
+  right: 50px !important;
+}
+
+:global(.slick-prev) {
+  left: 50px !important;
+}
