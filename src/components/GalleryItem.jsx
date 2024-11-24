@@ -37,7 +37,7 @@ function GalleryItem({ image, title }) {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <img src={image} alt="TITLE" className={styles.galleryImage} />
+      <img src={image} alt={title} className={styles.galleryImage} />
       <div className={`${styles.overlay} ${styles[hoverDirection]}`}>
         <h1>{title}</h1>
       </div>

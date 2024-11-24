@@ -2,6 +2,7 @@
   position: relative;
   overflow: hidden;
   display: inline-block;
+  aspect-ratio: 1/1;
   max-width: 650px;
   max-height: 650px;
   margin: 10px;
@@ -37,6 +38,8 @@
   font-weight: 400;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  text-align: center;
+  text-wrap: balance;
 }
 
 .galleryItem:hover .galleryImage {
