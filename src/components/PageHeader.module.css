@@ -1,0 +1,26 @@
+.pageHeader {
+  background-size: cover;
+  background-position: center;
+  min-height: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.pageHeader h1 {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+  .pageHeader {
+    min-height: 200px;
+  }
+  .pageHeader h1 {
+    font-size: 30px;
+  }
+}

@@ -34,35 +34,41 @@ const iconStyle = { strokeWidth: 2, width: "45px" };
 
 export const ABOUT_COMPANY = [
   {
+    id: "engineering-excellence",
     icon: <HiOutlineBuildingOffice style={iconStyle} />,
     title: "Engineering Excellence",
     subtitle:
       "Structural and Civil Engineering services for private clients and public agencies.",
   },
   {
+    id: "calculated-inspections",
     icon: <GrUserWorker style={iconStyle} />,
     title: "Calculated Inspections",
     subtitle: "We excel at both job-site inspections and stress calculations.",
   },
   {
+    id: "design-expertise",
     icon: <HiOutlineWrenchScrewdriver style={iconStyle} />,
     title: "Design Expertise",
     subtitle:
       "Residential, commercial, institutional, including mid and high-rises.",
   },
   {
+    id: "trusted-quality",
     icon: <HiOutlineUserGroup style={iconStyle} />,
     title: "Trusted Quality",
     subtitle:
       "Quality and reliable proposals for owners, architects, and builders.",
   },
   {
+    id: "value-engineering",
     icon: <GrMoney style={iconStyle} />,
     title: "Value Engineering",
     subtitle:
       "ASM delivers quality projects that align with our clients' cost goals.",
   },
   {
+    id: "detailed-precision",
     icon: <HiOutlineShieldCheck style={iconStyle} />,
     title: "Detailed Precision",
     subtitle:
