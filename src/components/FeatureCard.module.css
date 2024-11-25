@@ -42,3 +42,9 @@ svg {
   font-weight: 400;
   text-wrap: pretty;
 }
+
+@media (max-width: 900px) {
+  .featureCard {
+    padding: 20px;
+  }
+}
