@@ -5,3 +5,10 @@ export function groupCarouselItems(items, itemsPerPage) {
   }
   return groupedItems;
 }
+
+export function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}

@@ -1,0 +1,72 @@
+.serviceDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding-top: 80px;
+  padding-left: 180px;
+  padding-bottom: 80px;
+}
+
+.serviceImg {
+  aspect-ratio: 16/9;
+  width: 500px;
+  height: 250px;
+  object-fit: cover;
+}
+.serviceDetails h1 {
+  margin-top: 40px;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  color: #151515;
+  text-transform: uppercase;
+  width: 500px;
+}
+
+.serviceDetails p {
+  margin-top: 24px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #777777;
+  letter-spacing: 0.075em;
+  font-weight: 400;
+  text-wrap: pretty;
+  width: 500px;
+}
+
+.serviceDetails a {
+  margin-top: 40px;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  color: #ff5200;
+  text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+  .serviceDetails {
+    padding-left: 0;
+    align-items: center;
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 700px) {
+  .serviceDetails {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .serviceDetails h1 {
+    font-size: 24px;
+    width: auto;
+  }
+  .serviceDetails p {
+    font-size: 16px;
+    width: auto;
+  }
+}

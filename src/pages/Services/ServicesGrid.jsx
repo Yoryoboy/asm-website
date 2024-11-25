@@ -12,6 +12,7 @@ function ServicesGrid() {
           title={service.title}
           description={service.description}
           img={service.image}
+          id={service.id}
         />
       ))}
     </section>

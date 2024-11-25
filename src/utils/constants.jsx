@@ -78,7 +78,7 @@ export const ABOUT_COMPANY = [
 
 export const SERVICES = [
   {
-    id: 1,
+    id: "civil-engineering-design",
     title: "Civil Engineering Design",
     description:
       "Creating innovative and practical solutions for engineering challenges.",
@@ -87,7 +87,7 @@ export const SERVICES = [
       "Our Civil Engineering Design services prioritize delivering innovative solutions tailored to meet project requirements. From roadways to water systems, we handle a wide array of engineering challenges with precision. By integrating advanced modeling tools, we ensure compliance with regulations and maximize efficiency in design execution. We aim to enhance functionality while supporting sustainable development goals.",
   },
   {
-    id: 2,
+    id: "structural-design",
     title: "Structural Design",
     description:
       "Crafting safe and efficient frameworks for buildings and infrastructure.",
@@ -96,7 +96,7 @@ export const SERVICES = [
       "Structural Design is at the core of what we do, focusing on creating reliable frameworks that ensure safety and performance. From high-rise buildings to industrial structures, our team employs cutting-edge techniques to optimize designs. Whether managing complex loads or addressing environmental factors, our designs aim for durability, cost-efficiency, and architectural harmony.",
   },
   {
-    id: 3,
+    id: "construction-observation-administration",
     title: "Construction Observation & Administration",
     description: "Ensuring quality and compliance during construction phases.",
     image: obsadm,
@@ -104,7 +104,7 @@ export const SERVICES = [
       "Our Construction Observation & Administration services provide oversight to guarantee that projects meet design standards and regulatory requirements. By closely monitoring construction phases, we ensure every detail aligns with approved plans. Our team collaborates with contractors, addresses on-site challenges, and keeps stakeholders informed, ensuring seamless project progression and successful delivery.",
   },
   {
-    id: 4,
+    id: "value-engineering",
     title: "Value Engineering",
     description:
       "Optimizing designs to maximize functionality and minimize costs.",
@@ -113,7 +113,7 @@ export const SERVICES = [
       "Value Engineering focuses on enhancing project outcomes by identifying opportunities to improve efficiency without compromising quality. Our team evaluates designs, construction methods, and materials to find cost-effective solutions. By integrating client goals and performance requirements, we ensure projects deliver maximum value, achieving both economic and functional excellence.",
   },
   {
-    id: 5,
+    id: "preparation-of-plans",
     title: "Preparation of Plans",
     description: "Developing precise and detailed plans for project execution.",
     image: planpre,
@@ -121,7 +121,7 @@ export const SERVICES = [
       "Preparation of Plans is a crucial stage where attention to detail and accuracy are paramount. Our team develops comprehensive drawings and specifications tailored to each project’s needs. By employing advanced tools and collaborative workflows, we ensure seamless integration between design and construction phases, facilitating efficient execution and reducing potential delays.",
   },
   {
-    id: 6,
+    id: "feasibility-study-reports",
     title: "Feasibility Study & Reports",
     description: "Evaluating project viability through comprehensive analysis.",
     image: feasibility,
@@ -129,7 +129,7 @@ export const SERVICES = [
       "Our Feasibility Study & Reports services provide clients with in-depth evaluations of potential projects. We analyze technical, economic, and environmental factors to determine viability. By delivering clear and actionable insights, we empower stakeholders to make informed decisions and mitigate risks, ensuring that projects align with budgetary and strategic objectives.",
   },
   {
-    id: 7,
+    id: "construction-documents",
     title: "Construction Documents",
     description:
       "Creating detailed construction documents for project execution.",
@@ -138,7 +138,7 @@ export const SERVICES = [
       "Construction Documents are the blueprint for successful project execution. We produce detailed plans, specifications, and schedules that guide every construction phase. By incorporating client requirements and regulatory standards, our documents ensure clarity, precision, and efficiency. These deliverables form the foundation for seamless collaboration between design teams and contractors.",
   },
   {
-    id: 8,
+    id: "planning-cost-estimations",
     title: "Planning & Cost Estimations",
     description:
       "Providing accurate and up-to-date cost estimates for project execution.",
@@ -147,7 +147,7 @@ export const SERVICES = [
       "Planning & Cost Estimations ensure projects stay on track both financially and strategically. Our team develops detailed budgets based on thorough analysis of materials, labor, and timelines. By using advanced estimating tools and market data, we provide accurate projections that enable clients to plan confidently and allocate resources effectively.",
   },
   {
-    id: 9,
+    id: "building-investigations",
     title: "Building Investigations",
     description:
       "Analyzing structures for safety, compliance, and performance improvements.",

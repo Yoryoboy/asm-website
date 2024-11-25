@@ -1,8 +1,9 @@
 /* eslint-disable react/prop-types */
 
+import { Link } from "react-router-dom";
 import styles from "./ServiceItem.module.css";
 
-function ServiceItem({ title, description, img }) {
+function ServiceItem({ title, description, img, id }) {
   return (
     <article className={styles.serviceItem}>
       <div className={styles.serviceItemImgContainer}>
@@ -10,7 +11,7 @@ function ServiceItem({ title, description, img }) {
       </div>
       <h1>{title}</h1>
       <p>{description}</p>
-      <a href="#">READ MORE &rarr;</a>
+      <Link to={`/services/${id}`}>READ MORE &rarr;</Link>
     </article>
   );
 }
