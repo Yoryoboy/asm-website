@@ -1,8 +1,7 @@
 .featureCard {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  align-items: start;
+  justify-content: start;
   gap: 25px;
 }
 
@@ -40,11 +39,14 @@ svg {
   line-height: 1.5;
   color: rgba(21, 21, 21, 0.8);
   font-weight: 400;
-  text-wrap: pretty;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
   .featureCard {
     padding: 20px;
+  }
+  .featureCardIcon div {
+    width: 60px;
+    height: 60px;
   }
 }
