@@ -1,10 +1,17 @@
+import { useNavigate } from "react-router-dom";
 import logo from "../assets/images/logo.png";
 
 import styles from "./Logo.module.css";
 
 function Logo() {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/");
+  };
+
   return (
-    <div className={styles.navbarBrand}>
+    <div className={styles.navbarBrand} onClick={handleClick}>
       <img
         src={logo}
         alt="ASM Consulting Engineers logo"

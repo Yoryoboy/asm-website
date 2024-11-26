@@ -1,6 +1,7 @@
 .navbarBrand {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .navbarBrand div {
