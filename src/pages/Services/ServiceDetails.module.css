@@ -10,7 +10,7 @@
 
 .serviceImg {
   aspect-ratio: 16/9;
-  width: 500px;
+  width: 100%;
   height: 250px;
   object-fit: cover;
 }
@@ -21,7 +21,6 @@
   letter-spacing: 0.1em;
   color: #151515;
   text-transform: uppercase;
-  width: 500px;
 }
 
 .serviceDetails p {
@@ -38,16 +37,6 @@
 
 @media (max-width: 900px) {
   .serviceDetails {
-    padding-left: 0;
-    align-items: center;
-
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-}
-
-@media (max-width: 700px) {
-  .serviceDetails {
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
@@ -60,5 +49,11 @@
   .serviceDetails p {
     font-size: 16px;
     width: auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .serviceDetails {
+    flex-direction: column;
   }
 }

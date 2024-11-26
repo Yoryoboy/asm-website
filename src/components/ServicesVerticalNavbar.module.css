@@ -49,3 +49,9 @@
 .servicesVerticalNavbarList li a:hover {
   color: #ff5200;
 }
+
+@media (max-width: 700px) {
+  .servicesVerticalNavbar {
+    display: none;
+  }
+}
