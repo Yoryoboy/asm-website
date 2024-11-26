@@ -12,14 +12,14 @@
   row-gap: 15px;
 }
 
-@media (max-width: 1270px) {
+@media (max-width: 900px) {
   .aboutCompany {
     grid-template-columns: repeat(2, 400px);
     grid-template-rows: repeat(3, 150px);
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 700px) {
   .aboutCompany {
     grid-template-columns: repeat(1, 400px);
     grid-template-rows: repeat(6, 150px);

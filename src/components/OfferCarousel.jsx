@@ -11,9 +11,9 @@ function OfferCarousel() {
 
   useEffect(() => {
     function handleResize() {
-      if (window.innerWidth <= 960) {
+      if (window.innerWidth <= 700) {
         setItemsPerPage(1); // Móvil: 1 elemento
-      } else if (window.innerWidth <= 1400) {
+      } else if (window.innerWidth <= 900) {
         setItemsPerPage(2); // Tablets: 2 elementos
       } else {
         setItemsPerPage(3); // Escritorio: 3 elementos
