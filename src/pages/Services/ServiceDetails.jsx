@@ -4,6 +4,7 @@ import { scrollToTop } from "../../utils/helperFunctions";
 import { BackButton } from "../../components/BackButton";
 
 import styles from "./ServiceDetails.module.css";
+import ServicesVerticalNavbar from "../../components/ServicesVerticalNavbar";
 
 function ServiceDetails() {
   const { id } = useParams();
@@ -14,14 +15,17 @@ function ServiceDetails() {
 
   return (
     <main className={styles.serviceDetails}>
-      <img
-        src={service.image}
-        alt={service.title}
-        className={styles.serviceImg}
-      />
-      <h1>{service.title}</h1>
-      <p>{service.longText}</p>
-      <BackButton />
+      <aside>
+        <img
+          src={service.image}
+          alt={service.title}
+          className={styles.serviceImg}
+        />
+        <h1>{service.title}</h1>
+        <p>{service.longText}</p>
+        <BackButton />
+      </aside>
+      <ServicesVerticalNavbar services={SERVICES} />
     </main>
   );
 }
