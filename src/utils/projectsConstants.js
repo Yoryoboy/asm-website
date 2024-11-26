@@ -12,7 +12,7 @@ import bay102 from "../assets/gallery/BAY VIEW 102.webp";
 
 export const projects = [
   {
-    id: 1,
+    id: "smart-building-tower-3",
     name: "SMART BUILDING-TOWER 3",
     location: "Miami, FL",
     servicePerformed:
@@ -21,7 +21,7 @@ export const projects = [
     img: smart3,
   },
   {
-    id: 2,
+    id: "smart-building-tower-1-2",
     name: "SMART BUILDING-TOWER 1 & 2",
     location: "Miami, FL",
     servicePerformed:
@@ -30,7 +30,7 @@ export const projects = [
     img: smart12,
   },
   {
-    id: 3,
+    id: "fountainbleau",
     name: "FOUNTAINBLEAU",
     location: "Miami, FL",
     servicePerformed:
@@ -39,7 +39,7 @@ export const projects = [
     img: fountainbleau,
   },
   {
-    id: 4,
+    id: "delmar",
     name: "DELMAR",
     location: "St. Petersburg, FL",
     servicePerformed:
@@ -48,7 +48,7 @@ export const projects = [
     img: delmar,
   },
   {
-    id: 5,
+    id: "casa-glass-oak",
     name: "CASA GLASS OAK",
     location: "Coral Gables, FL",
     servicePerformed:
@@ -57,7 +57,7 @@ export const projects = [
     img: casaGlassOak,
   },
   {
-    id: 7,
+    id: "east-49-street",
     name: "EAST 49 STREET",
     location: "Hialeah, FL",
     servicePerformed:
@@ -66,7 +66,7 @@ export const projects = [
     img: east49,
   },
   {
-    id: 8,
+    id: "city-vista",
     name: "CITY VISTA",
     location: "Pompano Beach, FL",
     servicePerformed:
@@ -75,7 +75,7 @@ export const projects = [
     img: cityVista,
   },
   {
-    id: 10,
+    id: "o-residence",
     name: "O RESIDENCE",
     location: "Bay Harbor Island, FL",
     servicePerformed:
@@ -84,7 +84,7 @@ export const projects = [
     img: oresidence,
   },
   {
-    id: 11,
+    id: "ivory-condominium",
     name: "IVORY CONDOMINIUM",
     location: "Bay Harbor Island, FL",
     servicePerformed:
@@ -93,7 +93,7 @@ export const projects = [
     img: ivoryCondo,
   },
   {
-    id: 13,
+    id: "bay-harbor-club",
     name: "BAY HARBOR CLUB",
     location: "Bay Harbor Island, FL",
     servicePerformed:
@@ -102,7 +102,7 @@ export const projects = [
     img: bayHarborClub,
   },
   {
-    id: 15,
+    id: "bay-view-102",
     name: "BAY VIEW 102",
     location: "Bay Harbor Island, FL",
     servicePerformed:

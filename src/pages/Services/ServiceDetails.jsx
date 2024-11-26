@@ -1,7 +1,7 @@
 import { SERVICES } from "../../utils/constants";
 import { useParams } from "react-router-dom";
-import { Link } from "react-router-dom";
 import { scrollToTop } from "../../utils/helperFunctions";
+import { BackButton } from "../../components/BackButton";
 
 import styles from "./ServiceDetails.module.css";
 
@@ -21,7 +21,7 @@ function ServiceDetails() {
       />
       <h1>{service.title}</h1>
       <p>{service.longText}</p>
-      <Link to="/services">&larr; BACK TO SERVICES</Link>
+      <BackButton />
     </main>
   );
 }

@@ -6,6 +6,8 @@ import ServiceDetails from "./pages/Services/ServiceDetails";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import Projects from "./pages/Projects/Projects";
 import ContactUs from "./pages/ContactUs/ContactUs";
+import Gallery from "./components/Gallery";
+import ProjectDetails from "./pages/Projects/ProjectDetails";
 
 const AppRouter = () => (
   <Routes>
@@ -15,7 +17,10 @@ const AppRouter = () => (
       <Route path=":id" element={<ServiceDetails />} />
     </Route>
     <Route path="/about" element={<AboutUs />} />
-    <Route path="/projects" element={<Projects />} />
+    <Route path="/projects" element={<Projects />}>
+      <Route index element={<Gallery />} />
+      <Route path=":id" element={<ProjectDetails />} />
+    </Route>
     <Route path="/contactus" element={<ContactUs />} />
   </Routes>
 );

@@ -11,6 +11,7 @@ function Gallery() {
           key={project.id}
           image={project.img}
           title={project.name}
+          id={project.id}
         />
       ))}
     </section>

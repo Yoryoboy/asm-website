@@ -33,15 +33,7 @@
   font-weight: 400;
   text-wrap: pretty;
   width: 500px;
-}
-
-.serviceDetails a {
-  margin-top: 40px;
-  font-size: 18px;
-  font-weight: 400;
-  letter-spacing: 0.1em;
-  color: #ff5200;
-  text-transform: uppercase;
+  margin-bottom: 40px;
 }
 
 @media (max-width: 900px) {

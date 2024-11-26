@@ -1,27 +1,13 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
+import { getHoverDirection } from "../utils/helperFunctions";
+import { useNavigate } from "react-router-dom";
+
 import styles from "./GalleryItem.module.css";
 
-function getHoverDirection(event, element) {
-  const { top, right, bottom, left } = element.getBoundingClientRect();
-  const x = event.clientX;
-  const y = event.clientY;
-
-  const fromTop = Math.abs(y - top);
-  const fromBottom = Math.abs(bottom - y);
-  const fromLeft = Math.abs(x - left);
-  const fromRight = Math.abs(right - x);
-
-  const min = Math.min(fromTop, fromBottom, fromLeft, fromRight);
-
-  if (min === fromTop) return "top";
-  if (min === fromBottom) return "bottom";
-  if (min === fromLeft) return "left";
-  return "right";
-}
-
-function GalleryItem({ image, title }) {
+function GalleryItem({ image, title, id }) {
   const [hoverDirection, setHoverDirection] = useState(null);
+  const navigate = useNavigate();
 
   const handleMouseEnter = (event) => {
     setHoverDirection(getHoverDirection(event, event.target));
@@ -31,11 +17,16 @@ function GalleryItem({ image, title }) {
     setHoverDirection(getHoverDirection(event, event.target));
   };
 
+  const handleClick = () => {
+    navigate(`/projects/${id}`);
+  };
+
   return (
     <div
       className={`${styles.galleryItem} ${styles[hoverDirection]}`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
+      onClick={() => handleClick(id)}
     >
       <img src={image} alt={title} className={styles.galleryImage} />
       <div className={`${styles.overlay} ${styles[hoverDirection]}`}>
