@@ -7,28 +7,7 @@
   background-color: white;
   max-width: 1000px;
   margin: 0 auto;
-}
-
-.navbarBrand {
-  display: flex;
-  align-items: center;
-}
-
-.navbarLogo {
-  height: 39px;
-  margin-right: 10px;
-}
-
-.navbarTitle {
-  font-size: 20px;
-  font-weight: bold;
-  color: #000;
-}
-
-.navbarSubtitle {
-  font-size: 12px;
-  color: #777;
-  margin-left: 5px;
+  height: 100px;
 }
 
 .navbarNav {

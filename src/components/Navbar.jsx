@@ -1,21 +1,11 @@
 import { NavLink } from "react-router-dom";
-import logo from "../assets/images/logo.png";
 import styles from "./Navbar.module.css";
+import Logo from "./Logo";
 
 const Navbar = () => {
   return (
     <nav className={styles.navbar}>
-      <div className={styles.navbarBrand}>
-        <img
-          src={logo}
-          alt="ASM Consulting Engineers logo"
-          className={styles.navbarLogo}
-        />
-        <div>
-          <span className={styles.navbarTitle}>ASM Consulting</span>
-          <span className={styles.navbarSubtitle}> Engineers</span>
-        </div>
-      </div>
+      <Logo />
       <ul className={styles.navbarNav}>
         <li className={styles.navbarNavItem}>
           <NavLink to="/" className={styles.navLink}>

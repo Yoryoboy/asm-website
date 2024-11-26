@@ -1,0 +1,34 @@
+.navbarBrand {
+  display: flex;
+  align-items: center;
+}
+
+.navbarBrand div {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbarLogo {
+  height: 80px;
+  margin-right: 10px;
+}
+
+.navbarTitle {
+  font-size: 25px;
+  font-weight: bold;
+  color: #ff5200;
+  font-weight: 600;
+}
+
+.navbarTitle span {
+  color: #000;
+}
+
+.navbarSubtitle {
+  font-size: 18px;
+  color: #000;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.6em;
+}
