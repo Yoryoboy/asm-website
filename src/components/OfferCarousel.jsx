@@ -7,7 +7,7 @@ import { SERVICES } from "../utils/constants";
 import styles from "./OfferCarousel.module.css";
 
 function OfferCarousel() {
-  const [itemsPerPage, setItemsPerPage] = useState(3); // Número inicial (pantallas grandes)
+  const [itemsPerPage, setItemsPerPage] = useState(3);
 
   useEffect(() => {
     function handleResize() {
@@ -38,6 +38,7 @@ function OfferCarousel() {
               title={item.title}
               description={item.description}
               image={item.image}
+              id={item.id}
             />
           ))}
         </div>
