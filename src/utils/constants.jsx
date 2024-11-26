@@ -25,9 +25,10 @@ export const ROUTES = {
 };
 
 export const COMPANY_INFO = {
-  NAME: "Civil Group",
-  PHONE: "+1 718-999-3939",
-  EMAIL: "info@civilgroup.com",
+  name: "ASM Consulting Engineers",
+  phone: "+1 (786) 324-0938",
+  email: "SINA@ASMENG1.COM",
+  address: "4836 SW 74th Court, Miami, FL 33155",
 };
 
 const iconStyle = { strokeWidth: 2, width: "45px" };
