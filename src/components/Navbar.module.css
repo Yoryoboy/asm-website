@@ -24,11 +24,16 @@
 
 .navLink {
   text-decoration: none;
-  font-size: 16px;
+  font-size: 18px;
   color: #000;
   font-weight: 500;
   position: relative;
   padding: 5px 0;
+}
+
+.navLink:hover {
+  color: #ff5200;
+  transition: all 0.3s ease;
 }
 
 .navbar a:global(.active) {
@@ -43,4 +48,49 @@
   right: 0;
   height: 2px;
   background-color: #ff6600;
+}
+
+/* Burger menu */
+.burgerMenu {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 15px;
+}
+
+.burgerLine {
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .burgerMenu {
+    display: flex;
+  }
+
+  .navbarNav {
+    z-index: 30;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    background-color: white;
+    flex-direction: column;
+    width: 200px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbarNavOpen {
+    transform: translateX(0);
+  }
+
+  .navbarNavItem {
+    margin: 15px;
+  }
 }
