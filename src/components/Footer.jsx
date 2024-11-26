@@ -3,6 +3,7 @@ import Facebook from "../assets/icons/Facebook";
 import LinkedIn from "../assets/icons/LinkedIn";
 import { HiPhone } from "react-icons/hi2";
 import { HiMail } from "react-icons/hi";
+import { COMPANY_INFO } from "../utils/constants";
 
 import styles from "./Footer.module.css";
 import { Link } from "react-router-dom";
@@ -41,7 +42,7 @@ function Footer() {
                   <HiPhone />
                 </div>
               </aside>
-              <h3>+1 718-999-3939</h3>
+              <h3>{COMPANY_INFO.phone}</h3>
             </li>
             <li>
               <aside className={styles.getInTouchIcon}>
@@ -49,7 +50,7 @@ function Footer() {
                   <HiMail />
                 </div>
               </aside>
-              <h3>sina@asmeng1.com</h3>
+              <h3>{COMPANY_INFO.email}</h3>
             </li>
             <li>
               <Link to="/contact">CONTACT US</Link>
