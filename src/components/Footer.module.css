@@ -24,6 +24,12 @@
   row-gap: 15px;
 }
 
+.quickLinks ul li:hover {
+  color: #ff5200;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
 .socialLink {
   display: flex;
   justify-content: center;
