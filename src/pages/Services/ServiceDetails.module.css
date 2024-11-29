@@ -8,13 +8,18 @@
   gap: 40px;
 }
 
+.serviceDetailsSidebar {
+  width: 100%;
+}
+
 .serviceImg {
   aspect-ratio: 16/9;
-  width: 100%;
+  max-width: 560px;
   height: 250px;
   object-fit: cover;
 }
 .serviceDetails h1 {
+  max-width: 560px;
   margin-top: 40px;
   font-size: 30px;
   font-weight: 400;
@@ -30,9 +35,9 @@
   color: #777777;
   letter-spacing: 0.075em;
   font-weight: 400;
-  text-wrap: pretty;
-  width: 500px;
   margin-bottom: 40px;
+  width: 100%;
+  overflow-wrap: break-word;
 }
 
 @media (max-width: 900px) {
@@ -55,5 +60,9 @@
 @media (max-width: 700px) {
   .serviceDetails {
     flex-direction: column;
+    width: 100%;
+  }
+  .serviceDetails img {
+    max-width: 100%;
   }
 }
