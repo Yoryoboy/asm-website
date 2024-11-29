@@ -85,7 +85,9 @@ function Footer() {
               <h3>{COMPANY_INFO.email}</h3>
             </li>
             <li>
-              <Link to="/contact">CONTACT US</Link>
+              <Link to="/contactus" onClick={() => scrollToTop()}>
+                CONTACT US
+              </Link>
             </li>
           </ul>
         </div>
