@@ -1,0 +1,27 @@
+.sideContactDetailsContent {
+  width: 390px;
+}
+
+.sideContactDetailsContent div {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 15px;
+}
+
+.sideContactDetailsContent h2 {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #151515;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.sideContactDetailsContent p {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  color: #151515;
+  text-transform: uppercase;
+}
