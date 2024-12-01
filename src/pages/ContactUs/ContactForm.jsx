@@ -1,9 +1,18 @@
 import { useState } from "react";
-import { Spin } from "antd";
+import { Spin, notification } from "antd";
 import styles from "./ContactForm.module.css";
 
 function ContactForm() {
   const [isLoading, setIsLoading] = useState(false);
+  const [api, contextHolder] = notification.useNotification();
+
+  function openNotificationWithIcon(type, data) {
+    api[type]({
+      message: data.title,
+      description: data.message,
+    });
+  }
+
   function sendForm(form, formElement) {
     fetch("https://formsubmit.co/ajax/93jads@gmail.com", {
       method: "POST",
@@ -15,17 +24,26 @@ function ContactForm() {
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
+        openNotificationWithIcon("success", {
+          ...data,
+          title: "Message Sent!",
+          message:
+            "Thank you for reaching out. We’ve received your message and will get back to you shortly",
+        });
         setIsLoading(false);
         formElement.reset();
       })
       .catch((error) => {
-        console.log(error);
+        openNotificationWithIcon("Error Sending Message", {
+          ...error,
+          title: "Error",
+          message: "Something went wrong. Please try again later",
+        });
         setIsLoading(false);
       });
   }
 
-  async function handleSubmit(event) {
+  function handleSubmit(event) {
     event.preventDefault();
     setIsLoading(true);
     const formElement = event.currentTarget;
@@ -46,14 +64,17 @@ function ContactForm() {
   }
 
   return (
-    <form className={styles.contactForm} onSubmit={handleSubmit}>
-      <h1>Get in Touch</h1>
-      <input type="text" placeholder="Name*" name="name" required />
-      <input type="email" placeholder="Email*" name="email" required />
-      <input type="tel" placeholder="Phone" name="phone" />
-      <textarea placeholder="Message" name="message" required></textarea>
-      <button>{isLoading ? <Spin /> : "SEND MESSAGE"}</button>
-    </form>
+    <>
+      {contextHolder}
+      <form className={styles.contactForm} onSubmit={handleSubmit}>
+        <h1>Get in Touch</h1>
+        <input type="text" placeholder="Name*" name="name" required />
+        <input type="email" placeholder="Email*" name="email" required />
+        <input type="tel" placeholder="Phone" name="phone" />
+        <textarea placeholder="Message" name="message" required></textarea>
+        <button>{isLoading ? <Spin /> : "SEND MESSAGE"}</button>
+      </form>
+    </>
   );
 }
 
