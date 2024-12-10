@@ -1,11 +1,25 @@
 .aboutCompany {
   background-color: #f5f5f5;
+  width: 100%;
+}
+
+.container {
+  margin: auto;
   display: grid;
+  max-width: 1460px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   justify-content: center;
   align-content: center;
   align-items: start;
-  padding: 80px 5%;
+  padding: 80px;
   column-gap: 35px;
-  row-gap: 25px;
+  row-gap: 55px;
+}
+
+@media (max-width: 900px) {
+  .container {
+    padding: 30px 10px;
+    row-gap: 10px;
+    column-gap: 0px;
+  }
 }

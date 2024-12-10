@@ -5,16 +5,18 @@ import { ABOUT_COMPANY } from "../../utils/constants";
 function AboutCompany() {
   return (
     <section className={styles.aboutCompany}>
-      {ABOUT_COMPANY.map((feature, index) => {
-        return (
-          <FeatureCard
-            key={index}
-            icon={feature.icon}
-            title={feature.title}
-            subtitle={feature.subtitle}
-          />
-        );
-      })}
+      <div className={styles.container}>
+        {ABOUT_COMPANY.map((feature, index) => {
+          return (
+            <FeatureCard
+              key={index}
+              icon={feature.icon}
+              title={feature.title}
+              subtitle={feature.subtitle}
+            />
+          );
+        })}
+      </div>
     </section>
   );
 }
