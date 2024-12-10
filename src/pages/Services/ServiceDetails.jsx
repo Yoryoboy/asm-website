@@ -15,7 +15,7 @@ function ServiceDetails() {
 
   return (
     <main className={styles.serviceDetails}>
-      <aside className={styles.serviceDetailsSidebar}>
+      <aside>
         <img
           src={service.image}
           alt={service.title}
