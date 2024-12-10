@@ -17,7 +17,7 @@ function Gallery() {
   };
 
   return (
-    <section>
+    <section className={styles.galleryContainer}>
       <div className={styles.galleryFilter}>
         <RadioButtons onFilterChange={handleFilterChange} />
       </div>
