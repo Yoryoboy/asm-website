@@ -19,6 +19,7 @@ export const projects = [
       "Structural design engineering services for a 23-story apartment building with an approximate square footage of 160,000 SF, including 7-story parking garages and a pool.",
     architect: "GINARD Studio",
     img: smart3,
+    type: "type-1",
   },
   {
     id: "smart-building-tower-1-2",
@@ -28,6 +29,7 @@ export const projects = [
       "Structural design engineering services for two 23-story apartment buildings with approximate square footage of 140,000 SF each, including 7-story parking garages and a pool.",
     architect: "Hernando Carrillo Architect",
     img: smart12,
+    type: "type-1",
   },
   {
     id: "fountainbleau",
@@ -37,6 +39,7 @@ export const projects = [
       "Structural design engineering services for a Six-story apartment building with an approximate square footage of 160,000 SF, including 3-story parking garages.",
     architect: "Valle Valle and Partners",
     img: fountainbleau,
+    type: "type-1",
   },
   {
     id: "delmar",
@@ -46,6 +49,7 @@ export const projects = [
       "Structural design engineering and threshold services for a Twelve-story apartment building, including a 3-story parking garage.",
     architect: "Corwil Architects",
     img: delmar,
+    type: "type-2",
   },
   {
     id: "casa-glass-oak",
@@ -55,6 +59,7 @@ export const projects = [
       "Structural design engineering services for a 2-story custom home.",
     architect: "FAO Architects",
     img: casaGlassOak,
+    type: "type-2",
   },
   {
     id: "east-49-street",
@@ -64,6 +69,7 @@ export const projects = [
       "Structural design engineering services for a three-story apartment building.",
     architect: "Design Tech International",
     img: east49,
+    type: "type-3",
   },
   {
     id: "city-vista",
@@ -73,6 +79,7 @@ export const projects = [
       "Structural design engineering services for a seven-story apartment building.",
     architect: "Corwil Architects",
     img: cityVista,
+    type: "type-3",
   },
   {
     id: "o-residence",
@@ -82,6 +89,7 @@ export const projects = [
       "Structural design engineering services for a Nine-story condominium, including a two-story parking garage and pool deck on the 3rd floor.",
     architect: "Charles Benson & Associates Architect",
     img: oresidence,
+    type: "type-3",
   },
   {
     id: "ivory-condominium",
@@ -91,6 +99,7 @@ export const projects = [
       "Structural design engineering services for a Nine-story condominium, including parking spaces in the basement and pool deck at the roof level.",
     architect: "Frankel Benayoun Architects Inc.",
     img: ivoryCondo,
+    type: "type-2",
   },
   {
     id: "bay-harbor-club",
@@ -100,6 +109,7 @@ export const projects = [
       "Structural design engineering services for an 8-story condominium, including parking spaces in the basement and pool deck at the roof level.",
     architect: "Frankel Benayoun Architects Inc.",
     img: bayHarborClub,
+    type: "type-1",
   },
   {
     id: "bay-view-102",
@@ -109,5 +119,6 @@ export const projects = [
       "Structural design engineering services for a nine-story condominium, including parking spaces in the basement and pool deck at the roof level.",
     architect: "Frankel Benayoun Architects Inc.",
     img: bay102,
+    type: "type-2",
   },
 ];
