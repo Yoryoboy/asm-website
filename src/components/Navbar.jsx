@@ -53,6 +53,11 @@ function Navbar() {
           </NavLink>
         </li>
         <li className={styles.navbarNavItem}>
+          <NavLink to="/about" className={styles.navLink} onClick={toggleMenu}>
+            About Us
+          </NavLink>
+        </li>
+        <li className={styles.navbarNavItem}>
           <NavLink
             to="/services"
             className={styles.navLink}
@@ -61,11 +66,7 @@ function Navbar() {
             Services
           </NavLink>
         </li>
-        <li className={styles.navbarNavItem}>
-          <NavLink to="/about" className={styles.navLink} onClick={toggleMenu}>
-            About Us
-          </NavLink>
-        </li>
+
         <li className={styles.navbarNavItem}>
           <NavLink
             to="/projects"

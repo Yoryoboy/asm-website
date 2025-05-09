@@ -9,38 +9,39 @@ function AboutUs() {
       <PageHeader title="about us" img={pageHeaderImg} />
       <section className={styles.aboutUs}>
         <div className={styles.aboutUsContainer}>
+          <h2>ASM Consulting Engineers</h2>
           <p>
-            Established in 2009, ASM Consulting Engineers Inc. is a
-            Florida-based consulting engineering firm founded by Sina Malek, a
-            Professional Engineer (P.E.) with over 25 years of experience.
-            Specializing in structural and civil engineering, ASM offers a
-            comprehensive range of services to private clients and public
-            agencies alike. From complex buildings to single-family residences,
-            our designs are a testament to precision, innovation, and
-            reliability.
+            Incorporated (ASM) is a Florida-based consulting engineering firm,
+            founded in 2009 by Sina Malek, a licensed Professional Engineer and
+            Special Inspector (P.E., S.I). We specialize in providing
+            comprehensive Structural and Civil Engineering services to
+            private clients and public agencies.
           </p>
           <p>
-            Our expertise includes structural design, feasibility studies,
-            construction administration, value engineering, and threshold
-            inspections. We ensure that every project meets the highest
-            standards of quality, safety, and efficiency, whether it involves
-            residential, commercial, institutional, or medical structures.
+            At ASM, we bring the same level of dedication and precision to every
+            project, whether designing complex commercial structures or
+            single-family residences. Our expertise extends beyond design; we
+            are equally skilled in conducting job-site inspections, performing
+            detailed stress calculations, and ensuring that every aspect of our
+            work meets the highest industry standards.
           </p>
           <p>
-            Our diverse portfolio reflects our commitment to excellence. From
-            designing high-rise buildings and sports centers to restoring
-            historical structures, ASM has left its mark on the architectural
-            landscape of Florida and beyond. Our specialties include engineering
-            design management, forensic engineering, restoration, and
-            preservation. We excel in leveraging modern tools and standards such
-            as AISC, ACI, IBC, and more, ensuring that our projects adhere to
-            the latest industry regulations and practices.
+            With over 25 years of experience, we take pride in our attention to
+            detail, technical excellence, and commitment to delivering reliable
+            engineering solutions. Our areas of expertise include:
           </p>
-          <p>
-            Thank you for trusting ASM Consulting Engineers Inc. We are
-            dedicated to turning your ideas into reality with precision and
-            innovation.
-          </p>
+          <ul>
+            <li>Structural and Civil Engineering Design</li>
+            <li>Feasibility Studies</li>
+            <li>Value Engineering</li>
+            <li>Threshold Inspections</li>
+            <li>Forensic Engineering</li>
+            <li>Restoration/Preservation</li>
+            <li>Construction Documents</li>
+            <li>Building Investigations and Assessment</li>
+            <li>30/40/50-Year Recertification</li>
+            <li>Structural Integrity Reserve Studies (SIRS)</li>
+          </ul>
         </div>
       </section>
     </main>

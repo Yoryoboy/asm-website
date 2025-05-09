@@ -22,3 +22,9 @@
   font-size: 1.1rem;
   margin-bottom: 15px;
 }
+
+.aboutUsContainer ul {
+ list-style-type: circle;
+  margin-left: 20px;
+}
+
