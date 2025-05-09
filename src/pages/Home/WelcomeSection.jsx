@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
-import img1 from "../../assets/images/1713671901756.png";
-import img2 from "../../assets/images/Feature-7-Civil-Engineering-Advancements.jpg";
-import img3 from "../../assets/images/welcome-image.webp";
+import img1 from "../../assets/images/Delmar-3.webp";
+import img2 from "../../assets/images/DJI_0316.webp";
+import img3 from "../../assets/images/Final - Rear.webp";
+import img4 from "../../assets/images/FRONT-02-3D.webp";
+import img5 from "../../assets/images/ginardstudio_smart_brickell_1.webp";
+import img6 from "../../assets/images/M--2.webp";
 import styles from "./WelcomeSection.module.css";
 import { Carousel } from "antd";
 
@@ -13,7 +16,7 @@ function WelcomeSection() {
         dots={false}
         fade={true}
         autoplaySpeed={4000}
-        speed={1500}
+        speed={3000}
       >
         <div className={styles.imageWrapper}>
           <img
@@ -33,6 +36,27 @@ function WelcomeSection() {
           <img
             className={styles.welcomeSectionImage}
             src={img3}
+            alt="welcome-image"
+          />
+        </div>
+        <div className={styles.imageWrapper}>
+          <img
+            className={styles.welcomeSectionImage}
+            src={img4}
+            alt="welcome-image"
+          />
+        </div>
+        <div className={styles.imageWrapper}>
+          <img
+            className={styles.welcomeSectionImage}
+            src={img5}
+            alt="welcome-image"
+          />
+        </div>
+        <div className={styles.imageWrapper}>
+          <img
+            className={styles.welcomeSectionImage}
+            src={img6}
             alt="welcome-image"
           />
         </div>
