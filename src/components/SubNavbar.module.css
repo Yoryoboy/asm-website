@@ -1,0 +1,94 @@
+.subNavbarContainer {
+  background-color: #ff5200;
+  width: 100%;
+}
+
+.subNavbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 12px 20px;
+  color: white;
+}
+
+.navLinks {
+  display: flex;
+  
+  gap: 60px;
+}
+
+.subNavLink {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0 15px;
+  transition: color 0.3s ease;
+}
+
+.subNavLink:hover {
+  color: #000; 
+}
+
+.subNavLink:global(.active) {
+  color: #000; 
+}
+
+.socialIcons {
+  display: flex;
+  gap: 15px;
+}
+
+.socialIcons a {
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.socialIcons a:hover {
+  color: #000; 
+}
+
+
+@media (max-width: 768px) {
+  .subNavbar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 12px 10px;
+  }
+  
+  .navLinks {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+  }
+  
+  .subNavLink {
+    padding: 0 5px;
+    white-space: nowrap;
+    font-size: 14px;
+  }
+  
+  .socialIcons {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .navLinks {
+    gap: 10px;
+  }
+  
+  .subNavLink {
+    padding: 0 5px;
+    font-size: 11px;
+    font-weight: 400;
+  }
+  
+  .socialIcons {
+    gap: 12px;
+  }
+}
