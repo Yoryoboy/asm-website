@@ -9,6 +9,8 @@ import ContactUs from "./pages/ContactUs/ContactUs";
 import Gallery from "./components/Gallery";
 import ProjectDetails from "./pages/Projects/ProjectDetails";
 import StructuralEngineering from "./pages/StructuralEngineering/StructuralEngineering";
+import CivilEngineering from "./pages/CivilEngineering/CivilEngineering";
+import SpecialInspections from "./pages/SpecialInspections/SpecialInspections";
 
 const AppRouter = () => (
   <Routes>
@@ -24,6 +26,8 @@ const AppRouter = () => (
     </Route>
     <Route path="/contactus" element={<ContactUs />} />
     <Route path="/structural-engineering" element={<StructuralEngineering />} />
+    <Route path="/civil-engineering" element={<CivilEngineering />} />
+    <Route path="/special-inspections" element={<SpecialInspections />} />
   </Routes>
 );
 
