@@ -6,13 +6,13 @@ function SubNavbar() {
     <div className={styles.subNavbarContainer}>
       <div className={styles.subNavbar}>
         <div className={styles.navLinks}>
-          <NavLink to="/services/structural" className={styles.subNavLink}>
+          <NavLink to="/structural-engineering" className={styles.subNavLink}>
             Structural Engineering
           </NavLink>
-          <NavLink to="/services/civil" className={styles.subNavLink}>
+          <NavLink to="/civil-engineering" className={styles.subNavLink}>
             Civil Engineering
           </NavLink>
-          <NavLink to="/services/reviews" className={styles.subNavLink}>
+          <NavLink to="/special-inspections" className={styles.subNavLink}>
             Threshold/Special Inspections
           </NavLink>
         </div>

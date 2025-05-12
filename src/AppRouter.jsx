@@ -8,6 +8,7 @@ import Projects from "./pages/Projects/Projects";
 import ContactUs from "./pages/ContactUs/ContactUs";
 import Gallery from "./components/Gallery";
 import ProjectDetails from "./pages/Projects/ProjectDetails";
+import StructuralEngineering from "./pages/StructuralEngineering/StructuralEngineering";
 
 const AppRouter = () => (
   <Routes>
@@ -22,6 +23,7 @@ const AppRouter = () => (
       <Route path=":id" element={<ProjectDetails />} />
     </Route>
     <Route path="/contactus" element={<ContactUs />} />
+    <Route path="/structural-engineering" element={<StructuralEngineering />} />
   </Routes>
 );
 
