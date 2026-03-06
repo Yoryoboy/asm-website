@@ -79,25 +79,6 @@
   background: #f4f6f9;
 }
 
-.galleryBadge {
-  position: absolute;
-  top: 16px;
-  left: 16px;
-  display: inline-flex;
-  align-items: center;
-  min-height: 34px;
-  max-width: calc(100% - 32px);
-  padding: 8px 12px;
-  border-radius: 999px;
-  background: rgba(21, 32, 51, 0.68);
-  backdrop-filter: blur(10px);
-  color: #ffffff;
-  font-size: 0.76rem;
-  font-weight: 500;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
 .galleryArrow {
   min-width: 36px;
   justify-content: center;

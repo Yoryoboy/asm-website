@@ -14,9 +14,6 @@ function Gallery() {
 
   return (
     <section className={styles.galleryContainer}>
-      <div className={styles.galleryIntro}>
-        <p>Project Portfolio</p>
-      </div>
       <div className={styles.gallery}>
         {filteredProjects.map((project) => (
           <GalleryItem
@@ -25,7 +22,6 @@ function Gallery() {
             title={project.name}
             id={project.id}
             location={project.location}
-            category={project.category.label}
           />
         ))}
       </div>

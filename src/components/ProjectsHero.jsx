@@ -4,8 +4,6 @@ import {
   ALL_PROJECTS_CATEGORY,
   PROJECT_CATEGORIES,
   getCategorySlugFromParam,
-  getProjectsForCategory,
-  projectsCatalog,
 } from "../utils/projectsCatalog";
 
 import styles from "./ProjectsHero.module.css";
@@ -13,18 +11,11 @@ import styles from "./ProjectsHero.module.css";
 function ProjectsHero() {
   const [searchParams, setSearchParams] = useSearchParams();
   const activeCategory = getCategorySlugFromParam(searchParams.get("category"));
-  const filters = [ALL_PROJECTS_CATEGORY, ...PROJECT_CATEGORIES].map((category) => ({
-    ...category,
-    count:
-      category.slug === ALL_PROJECTS_CATEGORY.slug
-        ? projectsCatalog.length
-        : getProjectsForCategory(category.slug).length,
-  }));
 
   const handleCategoryChange = (categorySlug) => {
     const nextParams = new URLSearchParams(searchParams);
 
-    if (categorySlug === ALL_PROJECTS_CATEGORY.slug) {
+    if (!categorySlug) {
       nextParams.delete("category");
     } else {
       nextParams.set("category", categorySlug);
@@ -40,24 +31,31 @@ function ProjectsHero() {
     >
       <div className={styles.backdrop} />
       <div className={styles.heroInner}>
-        <div className={styles.titleBlock}>
-          <p>ASM Consulting Engineers</p>
-          <h1>Projects</h1>
-        </div>
-        <div className={styles.filterDock}>
-          {filters.map((category) => (
+        <div className={styles.categoryGrid} aria-label="Project categories">
+          <button
+            type="button"
+            className={`${styles.categoryPanel} ${styles.resetPanel} ${
+              activeCategory === ALL_PROJECTS_CATEGORY.slug ? styles.active : ""
+            }`}
+            onClick={() => handleCategoryChange("")}
+          >
+            <span>{ALL_PROJECTS_CATEGORY.label}</span>
+          </button>
+          {PROJECT_CATEGORIES.map((category, index) => (
             <button
               key={category.slug}
               type="button"
-              className={`${styles.filterChip} ${
+              className={`${styles.categoryPanel} ${
                 activeCategory === category.slug ? styles.active : ""
-              }`}
+              } ${styles[`panel${index + 1}`]}`}
               onClick={() => handleCategoryChange(category.slug)}
             >
-              <span className={styles.filterLabel}>{category.label}</span>
-              <span className={styles.filterCount}>{category.count}</span>
+              <span>{category.heroLabel}</span>
             </button>
           ))}
+        </div>
+        <div className={styles.titleBlock}>
+          <h1>Projects</h1>
         </div>
       </div>
     </header>
