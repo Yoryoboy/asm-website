@@ -125,6 +125,15 @@
   text-shadow: 0 16px 40px rgba(7, 10, 18, 0.28);
 }
 
+.mobileFilters {
+  display: none;
+}
+
+.mobileFiltersInner {
+  width: min(1480px, 100%);
+  margin: 0 auto;
+}
+
 @media (max-width: 980px) {
   .projectsHero {
     min-height: 360px;
@@ -156,15 +165,32 @@
 
 @media (max-width: 640px) {
   .projectsHero {
-    min-height: 320px;
+    min-height: 220px;
   }
 
   .heroInner {
-    min-height: 320px;
+    min-height: 220px;
     padding: 0 14px;
   }
 
   .categoryGrid {
+    display: none;
+  }
+
+  .mobileFilters {
+    display: block;
+    padding: 16px 16px 0;
+    background: #ffffff;
+  }
+
+  .mobileFiltersInner {
+    padding: 18px 16px;
+    border-radius: 24px;
+    background: #f5f7fb;
+    box-shadow: inset 0 0 0 1px rgba(21, 32, 51, 0.06);
+  }
+
+  .titleBlock {
     inset: 0 14px;
   }
 

@@ -44,6 +44,7 @@ function Gallery({ mode = "projects" }) {
           <RadioButtons
             options={homeFilterOptions}
             defaultValue={ALL_PROJECTS_CATEGORY.slug}
+            value={homeCategory}
             onFilterChange={setHomeCategory}
           />
         </div>

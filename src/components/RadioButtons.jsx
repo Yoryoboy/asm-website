@@ -1,7 +1,14 @@
 /* eslint-disable react/prop-types */
 import { Radio, ConfigProvider } from "antd";
+import styles from "./RadioButtons.module.css";
 
-function RadioButtons({ onFilterChange, options, defaultValue = "all" }) {
+function RadioButtons({
+  onFilterChange,
+  options,
+  defaultValue = "all",
+  value,
+  className = "",
+}) {
   const filterOptions =
     options ??
     [
@@ -39,9 +46,10 @@ function RadioButtons({ onFilterChange, options, defaultValue = "all" }) {
       }}
     >
       <Radio.Group
-        block
+        className={`${styles.radioButtons} ${className}`.trim()}
         options={filterOptions}
         defaultValue={defaultValue}
+        value={value}
         optionType="button"
         onChange={handleChange}
       />

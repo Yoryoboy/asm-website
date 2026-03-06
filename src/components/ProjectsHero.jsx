@@ -5,12 +5,20 @@ import {
   PROJECT_CATEGORIES,
   getCategorySlugFromParam,
 } from "../utils/projectsCatalog";
+import RadioButtons from "./RadioButtons";
 
 import styles from "./ProjectsHero.module.css";
 
 function ProjectsHero() {
   const [searchParams, setSearchParams] = useSearchParams();
   const activeCategory = getCategorySlugFromParam(searchParams.get("category"));
+  const mobileFilterOptions = [
+    { label: "All", value: ALL_PROJECTS_CATEGORY.slug },
+    ...PROJECT_CATEGORIES.map((category) => ({
+      label: category.label,
+      value: category.slug,
+    })),
+  ];
 
   const handleCategoryChange = (categorySlug) => {
     const nextParams = new URLSearchParams(searchParams);
@@ -25,40 +33,56 @@ function ProjectsHero() {
   };
 
   return (
-    <header
-      className={styles.projectsHero}
-      style={{ backgroundImage: `url(${headerImg})` }}
-    >
-      <div className={styles.backdrop} />
-      <div className={styles.heroInner}>
-        <div className={styles.categoryGrid} aria-label="Project categories">
-          <button
-            type="button"
-            className={`${styles.categoryPanel} ${styles.resetPanel} ${
-              activeCategory === ALL_PROJECTS_CATEGORY.slug ? styles.active : ""
-            }`}
-            onClick={() => handleCategoryChange("")}
-          >
-            <span>{ALL_PROJECTS_CATEGORY.label}</span>
-          </button>
-          {PROJECT_CATEGORIES.map((category, index) => (
+    <>
+      <header
+        className={styles.projectsHero}
+        style={{ backgroundImage: `url(${headerImg})` }}
+      >
+        <div className={styles.backdrop} />
+        <div className={styles.heroInner}>
+          <div className={styles.categoryGrid} aria-label="Project categories">
             <button
-              key={category.slug}
               type="button"
-              className={`${styles.categoryPanel} ${
-                activeCategory === category.slug ? styles.active : ""
-              } ${styles[`panel${index + 1}`]}`}
-              onClick={() => handleCategoryChange(category.slug)}
+              className={`${styles.categoryPanel} ${styles.resetPanel} ${
+                activeCategory === ALL_PROJECTS_CATEGORY.slug ? styles.active : ""
+              }`}
+              onClick={() => handleCategoryChange("")}
             >
-              <span>{category.heroLabel}</span>
+              <span>{ALL_PROJECTS_CATEGORY.label}</span>
             </button>
-          ))}
+            {PROJECT_CATEGORIES.map((category, index) => (
+              <button
+                key={category.slug}
+                type="button"
+                className={`${styles.categoryPanel} ${
+                  activeCategory === category.slug ? styles.active : ""
+                } ${styles[`panel${index + 1}`]}`}
+                onClick={() => handleCategoryChange(category.slug)}
+              >
+                <span>{category.heroLabel}</span>
+              </button>
+            ))}
+          </div>
+          <div className={styles.titleBlock}>
+            <h1>Projects</h1>
+          </div>
         </div>
-        <div className={styles.titleBlock}>
-          <h1>Projects</h1>
+      </header>
+      <div className={styles.mobileFilters}>
+        <div className={styles.mobileFiltersInner}>
+          <RadioButtons
+            options={mobileFilterOptions}
+            defaultValue={ALL_PROJECTS_CATEGORY.slug}
+            value={activeCategory}
+            onFilterChange={(value) =>
+              handleCategoryChange(
+                value === ALL_PROJECTS_CATEGORY.slug ? "" : value
+              )
+            }
+          />
         </div>
       </div>
-    </header>
+    </>
   );
 }
 
