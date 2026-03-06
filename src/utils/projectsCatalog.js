@@ -17,7 +17,7 @@ export const PROJECT_CATEGORIES = [
     slug: "multi-family",
     value: "MULTI-FAMILY",
     label: "Multi-Family",
-    heroLabel: "Multi-Family / Mixed Use",
+    heroLabel: "Multi-Family",
   },
   {
     slug: "single-family",
