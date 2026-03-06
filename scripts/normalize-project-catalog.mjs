@@ -5,6 +5,8 @@ import xlsx from "xlsx";
 const workbookPath = path.resolve("src/assets/files/catalog.xlsx");
 const backupPath = path.resolve("src/assets/files/catalog.backup.xlsx");
 const picturesRoot = path.resolve("src/assets/files/08-Pictures");
+const generatedDataPath = path.resolve("src/data/projects.generated.json");
+const defaultSheetName = "Sheet1";
 
 const imageExtensions = new Set([
   ".jpg",
@@ -34,6 +36,8 @@ const normalizeWhitespace = (value) =>
     .replace(/\u00a0/g, " ")
     .replace(/\s+/g, " ")
     .trim();
+
+const isNumericString = (value) => /^\d+$/.test(normalizeWhitespace(value));
 
 const slugify = (value) =>
   normalizeWhitespace(value)
@@ -132,30 +136,57 @@ const resolveFolder = (row, folderIndex) => {
   return fuzzyByName ? fuzzyByName.relativePath : "";
 };
 
-const workbook = xlsx.readFile(workbookPath);
-const worksheet = workbook.Sheets[workbook.SheetNames[0]];
-const rawRows = xlsx.utils.sheet_to_json(worksheet, { defval: "" });
+const getWorkbookRows = (sourcePath) => {
+  if (!fs.existsSync(sourcePath)) {
+    return [];
+  }
+
+  const workbook = xlsx.readFile(sourcePath);
+  const worksheet = workbook.Sheets[workbook.SheetNames[0]];
+  return xlsx.utils.sheet_to_json(worksheet, { defval: "" });
+};
+
+const hasMeaningfulProjectName = (row) => {
+  const legacyProjectName = normalizeWhitespace(row.__EMPTY);
+  const normalizedProjectName = normalizeWhitespace(row["PROJECT NAME"]);
+
+  if (legacyProjectName) {
+    return true;
+  }
+
+  return Boolean(normalizedProjectName && !isNumericString(normalizedProjectName));
+};
+
+const rawRowsFromWorkbook = getWorkbookRows(workbookPath);
+const rawRows =
+  rawRowsFromWorkbook.some(hasMeaningfulProjectName)
+    ? rawRowsFromWorkbook
+    : getWorkbookRows(backupPath);
 const folderIndex = buildFolderIndex();
 
 const normalizedRows = rawRows
   .map((row) => {
-    const indexValue = normalizeWhitespace(row["PROJECT NAME"]);
-    const projectName = normalizeWhitespace(row.__EMPTY);
+    const legacyProjectName = normalizeWhitespace(row.__EMPTY);
+    const normalizedProjectName = normalizeWhitespace(row["PROJECT NAME"]);
+    const indexValue = normalizeWhitespace(
+      legacyProjectName ? row["PROJECT NAME"] : row.INDEX
+    );
+    const projectName = legacyProjectName || normalizedProjectName;
 
-    if (!projectName) {
+    if (!projectName || isNumericString(projectName)) {
       return null;
     }
 
     const normalizedCategory = categoryMap.get(
-      normalizeWhitespace(row["CATEGORY "])
-    ) || normalizeWhitespace(row["CATEGORY "]);
+      normalizeWhitespace(row.CATEGORY || row["CATEGORY "])
+    ) || normalizeWhitespace(row.CATEGORY || row["CATEGORY "]);
     const folder = resolveFolder(row, folderIndex);
     const images = folder ? getImagePaths(folder) : [];
 
     return {
       INDEX: /^\d+$/.test(indexValue) ? Number(indexValue) : "",
       "PROJECT NAME": projectName,
-      "PROJECT ID": slugify(projectName),
+      "PROJECT ID": normalizeWhitespace(row["PROJECT ID"]) || slugify(projectName),
       ARCHITECT: normalizeWhitespace(row.ARCHITECT),
       "SERVICE PERFORMED": normalizeWhitespace(row["SERVICE PERFORMED"]),
       LOCATION: normalizeWhitespace(row.LOCATION),
@@ -165,6 +196,20 @@ const normalizedRows = rawRows
     };
   })
   .filter(Boolean);
+
+const generatedProjects = normalizedRows
+  .filter((row) => row["COVER IMAGE"])
+  .map((row) => ({
+    index: row.INDEX,
+    name: row["PROJECT NAME"],
+    id: row["PROJECT ID"],
+    architect: row.ARCHITECT,
+    servicePerformed: row["SERVICE PERFORMED"],
+    location: row.LOCATION,
+    category: row.CATEGORY,
+    link: row.LINK,
+    coverImage: row["COVER IMAGE"],
+  }));
 
 if (!fs.existsSync(backupPath)) {
   fs.copyFileSync(workbookPath, backupPath);
@@ -185,9 +230,12 @@ const nextWorksheet = xlsx.utils.json_to_sheet(normalizedRows, {
 });
 
 const nextWorkbook = xlsx.utils.book_new();
-xlsx.utils.book_append_sheet(nextWorkbook, nextWorksheet, workbook.SheetNames[0]);
+xlsx.utils.book_append_sheet(nextWorkbook, nextWorksheet, defaultSheetName);
 xlsx.writeFile(nextWorkbook, workbookPath);
+fs.mkdirSync(path.dirname(generatedDataPath), { recursive: true });
+fs.writeFileSync(generatedDataPath, `${JSON.stringify(generatedProjects, null, 2)}\n`);
 
 console.log(`Normalized ${normalizedRows.length} rows.`);
 console.log(`Workbook updated: ${workbookPath}`);
 console.log(`Backup saved: ${backupPath}`);
+console.log(`Generated data: ${generatedDataPath}`);

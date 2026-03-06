@@ -1,0 +1,157 @@
+.projectsHero {
+  --project-accent: #ff5200;
+  --project-dark: #152033;
+  position: relative;
+  min-height: 440px;
+  background-size: cover;
+  background-position: center 42%;
+  overflow: hidden;
+}
+
+.backdrop {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(7, 10, 18, 0.12), rgba(7, 10, 18, 0.74)),
+    linear-gradient(110deg, rgba(255, 82, 0, 0.18), rgba(0, 0, 0, 0) 54%);
+}
+
+.heroInner {
+  position: relative;
+  z-index: 1;
+  width: min(1480px, 100%);
+  min-height: 440px;
+  margin: 0 auto;
+  padding: 44px 24px 34px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.titleBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  color: #ffffff;
+  max-width: 720px;
+}
+
+.titleBlock p {
+  font-family: inherit;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.34em;
+  margin-bottom: 18px;
+  opacity: 0.92;
+}
+
+.titleBlock h1 {
+  font-family: inherit;
+  font-size: clamp(3rem, 7vw, 6rem);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  text-shadow: 0 16px 40px rgba(7, 10, 18, 0.28);
+}
+
+.filterDock {
+  width: min(1080px, 100%);
+  padding: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 34px;
+  background: rgba(10, 18, 30, 0.34);
+  backdrop-filter: blur(18px);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  box-shadow: 0 22px 60px rgba(7, 10, 18, 0.18);
+}
+
+.filterChip {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  cursor: pointer;
+  padding: 11px 16px 11px 18px;
+  font-family: inherit;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.filterChip:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.filterChip.active {
+  border-color: rgba(255, 82, 0, 0.48);
+  background: rgba(255, 82, 0, 0.16);
+}
+
+.filterLabel {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.86rem;
+}
+
+.filterCount {
+  display: inline-grid;
+  place-items: center;
+  min-width: 30px;
+  height: 30px;
+  padding: 0 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.1);
+  font-size: 0.82rem;
+  font-weight: 500;
+}
+
+@media (max-width: 980px) {
+  .projectsHero {
+    min-height: 440px;
+  }
+
+  .heroInner {
+    min-height: 440px;
+    padding-bottom: 28px;
+  }
+}
+
+@media (max-width: 640px) {
+  .projectsHero {
+    min-height: 480px;
+  }
+
+  .heroInner {
+    min-height: 480px;
+    padding: 36px 16px 22px;
+  }
+
+  .titleBlock p {
+    margin-bottom: 12px;
+    letter-spacing: 0.22em;
+  }
+
+  .titleBlock h1 {
+    letter-spacing: 0.1em;
+  }
+
+  .filterDock {
+    gap: 10px;
+    padding: 12px;
+    border-radius: 24px;
+  }
+
+  .filterChip {
+    width: 100%;
+    justify-content: space-between;
+  }
+}

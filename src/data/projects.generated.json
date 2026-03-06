@@ -1,0 +1,233 @@
+[
+  {
+    "index": 1,
+    "name": "SMART BUILDING-TOWER 3",
+    "id": "smart-building-tower-3",
+    "architect": "GINARD Studio",
+    "servicePerformed": "Structural engineering services for a 23-story apartment building with approximately 160,000 SF, including 7-story parking garages and a pool.",
+    "location": "MIAMI,FL",
+    "category": "MULTI-FAMILY",
+    "link": "08-Pictures/SMART BUILDING-TOWER 3",
+    "coverImage": "Picture1.webp"
+  },
+  {
+    "index": 2,
+    "name": "SMART BUILDING-TOWER 1 & 2",
+    "id": "smart-building-tower-1-and-2",
+    "architect": "Hernando Carrillo Architect",
+    "servicePerformed": "Structural design engineering services for two 23-story apartment buildings with approximately 140,000 SF each, including 7-story parking garages and a pool.",
+    "location": "MIAMI,FL",
+    "category": "MULTI-FAMILY",
+    "link": "08-Pictures/SMART BUIDING-TOWER 1 & 2",
+    "coverImage": "Picture2.webp"
+  },
+  {
+    "index": 3,
+    "name": "FOUNTAINBLEAU",
+    "id": "fountainbleau",
+    "architect": "Valle Valle and Partners",
+    "servicePerformed": "Structural design engineering services for a Six-story apartment building with an approximate square footage of 160,000 SF, including 3-story parking garages.",
+    "location": "Miami, FL",
+    "category": "MULTI-FAMILY",
+    "link": "08-Pictures/FOUNTAINBLEAU",
+    "coverImage": "Picture4.webp"
+  },
+  {
+    "index": 4,
+    "name": "UNIVERSAL STUDIOS- HOW TO TRAIN YOUR DRAGON",
+    "id": "universal-studios-how-to-train-your-dragon",
+    "architect": "Forrec",
+    "servicePerformed": "Structural design engineering services for a new amusement park in Orlando, Florida.",
+    "location": "Orlando, FL",
+    "category": "PARK & AMUSEMENT",
+    "link": "08-Pictures/UNIVERSAL STUDIO",
+    "coverImage": "Picture5.webp"
+  },
+  {
+    "index": 5,
+    "name": "DELMAR",
+    "id": "delmar",
+    "architect": "Corwil Architects",
+    "servicePerformed": "Structural design engineering and threshold services for a Twelve-story apartment building, including a 3-story parking garage.",
+    "location": "St. Petersburg, FL",
+    "category": "MULTI-FAMILY",
+    "link": "08-Pictures/DELMAR",
+    "coverImage": "Picture4.webp"
+  },
+  {
+    "index": 6,
+    "name": "CASA GLASS OAK",
+    "id": "casa-glass-oak",
+    "architect": "FAO Architects",
+    "servicePerformed": "Structural design engineering services for a 2-story custom home.",
+    "location": "Coral Gables, FL",
+    "category": "SINGLE FAMILY",
+    "link": "08-Pictures/CASA GLASS OAK",
+    "coverImage": "FRONT-01-3D.webp"
+  },
+  {
+    "index": 7,
+    "name": "LAKE WORTH MEDICAL OFFICE BUILDING",
+    "id": "lake-worth-medical-office-building",
+    "architect": "Design Tech International",
+    "servicePerformed": "Structural design engineering services for a three-story medical building, including the urgent care and MRI center.",
+    "location": "Lake Worth, Palm Beach, FL",
+    "category": "COMMERCIAL",
+    "link": "08-Pictures/LAKE WORTH MEDICAL OFFICE BUILDING",
+    "coverImage": "Picture6.webp"
+  },
+  {
+    "index": 8,
+    "name": "EAST 49 STREET",
+    "id": "east-49-street",
+    "architect": "Design Tech International",
+    "servicePerformed": "Structural design engineering services for a three-story apartment building.",
+    "location": "Hialeah, FL",
+    "category": "MULTI-FAMILY",
+    "link": "08-Pictures/EAST 49 STREET",
+    "coverImage": "Final - Front.webp"
+  },
+  {
+    "index": 9,
+    "name": "CITY VISTA",
+    "id": "city-vista",
+    "architect": "Corwil Architects",
+    "servicePerformed": "Structural design engineering services for a seven-story apartment building.",
+    "location": "Pompano Beach, FL",
+    "category": "MULTI-FAMILY",
+    "link": "08-Pictures/CITY VISTA",
+    "coverImage": "2022-08-14 (2).webp"
+  },
+  {
+    "index": 10,
+    "name": "BAHAMA BAY 3",
+    "id": "bahama-bay-3",
+    "architect": "WHA Design",
+    "servicePerformed": "Structural design engineering services for a two-story multi-family residential building.",
+    "location": "BAHAM BAY 3",
+    "category": "MULTI-FAMILY",
+    "link": "08-Pictures/BAHAM BAY 3",
+    "coverImage": "Picture7.webp"
+  },
+  {
+    "index": 11,
+    "name": "“O” RESIDENCE",
+    "id": "o-residence",
+    "architect": "Charles Benson & Associates",
+    "servicePerformed": "Structural design engineering services for a Nine-story condominium, including a two-story parking garage and pool deck on the 3rd floor.",
+    "location": "Bay Harbor Island, FL",
+    "category": "MULTI-FAMILY",
+    "link": "08-Pictures/O RESIDENCE",
+    "coverImage": "Picture8.webp"
+  },
+  {
+    "index": 12,
+    "name": "IVORY CONDOMINIUM",
+    "id": "ivory-condominium",
+    "architect": "Frankel Benayoun Architects Inc.",
+    "servicePerformed": "Structural design engineering services for a Nine-story condominium, including parking spaces in the basement and pool deck at the roof level.",
+    "location": "Bay Harbor Island, FL",
+    "category": "MULTI-FAMILY",
+    "link": "08-Pictures/IVORY CONDOMINIUM",
+    "coverImage": "Picture9.webp"
+  },
+  {
+    "index": 14,
+    "name": "BAY HARBOR CLUB",
+    "id": "bay-harbor-club",
+    "architect": "Frankel Benayoun Architects Inc.",
+    "servicePerformed": "Structural design engineering services for an 8-story condominium, including parking spaces in the basement and pool deck at the roof level.",
+    "location": "Bay Harbor Island, FL",
+    "category": "MULTI-FAMILY",
+    "link": "08-Pictures/BAY HARBOR CLUB",
+    "coverImage": "Picture10.webp"
+  },
+  {
+    "index": 15,
+    "name": "ATLANTIC HOTEL’S SHORING",
+    "id": "atlantic-hotels-shoring",
+    "architect": "COASTAL Construction",
+    "servicePerformed": "Structural design engineering services for bracing three sides of the exterior walls of a historical building from the 2nd floor to the roof level during the construction.",
+    "location": "Miami Beach, FL",
+    "category": "COMMERCIAL",
+    "link": "08-Pictures/ATLANTIC HOTELS SHORING",
+    "coverImage": "Picture11.webp"
+  },
+  {
+    "index": 16,
+    "name": "BAY VIEW 102",
+    "id": "bay-view-102",
+    "architect": "Frankel Benayoun Architects Inc.",
+    "servicePerformed": "Structural design engineering services for a nine-story condominium, including parking spaces in the basement and pool deck at the roof level.",
+    "location": "Bay Harbor Island, FL",
+    "category": "MULTI-FAMILY",
+    "link": "08-Pictures/BAY VIEW 102",
+    "coverImage": "Picture12.webp"
+  },
+  {
+    "index": 17,
+    "name": "SHANTI KIDS SCHOOL",
+    "id": "shanti-kids-school",
+    "architect": "Design Tech International/ SABI LLC",
+    "servicePerformed": "Structural design for a 2-story educational building with exterior Precast Concrete Wall.",
+    "location": "Miami, FL",
+    "category": "EDUCATIONAL",
+    "link": "08-Pictures/SHANTI KIDS SCHOOL",
+    "coverImage": "10shell.webp"
+  },
+  {
+    "index": 18,
+    "name": "JEFFERSON",
+    "id": "jefferson",
+    "architect": "LLR ARCHITECTS,INC",
+    "servicePerformed": "",
+    "location": "HOLLYWOOD, FL",
+    "category": "MULTI-FAMILY",
+    "link": "08-Pictures/Jefferson",
+    "coverImage": "RENDER 1.webp"
+  },
+  {
+    "index": 19,
+    "name": "1735 JACKSON",
+    "id": "1735-jackson",
+    "architect": "LLR ARCHITECTS,INC",
+    "servicePerformed": "",
+    "location": "HOLLYWOOD, FL",
+    "category": "MULTI-FAMILY",
+    "link": "08-Pictures/1735 Jackson",
+    "coverImage": "RENDER 1.webp"
+  },
+  {
+    "index": 27,
+    "name": "WAVE LANDING",
+    "id": "wave-landing",
+    "architect": "AMERICAN BUILDING ENGINEERS (ABE)",
+    "servicePerformed": "",
+    "location": "Fort Lauderdale, FL",
+    "category": "MULTI-FAMILY",
+    "link": "08-Pictures/WAVE LANDING",
+    "coverImage": "Pages from APPROVED BINDER.webp"
+  },
+  {
+    "index": 28,
+    "name": "BONNER CREEK",
+    "id": "bonner-creek",
+    "architect": "WHA Design",
+    "servicePerformed": "",
+    "location": "KISSIMEE, FL",
+    "category": "COMMERCIAL",
+    "link": "08-Pictures/BONNER CREEK",
+    "coverImage": "Rendering 1 (2).webp"
+  },
+  {
+    "index": 29,
+    "name": "1714 VAN BUREN STREET",
+    "id": "1714-van-buren-street",
+    "architect": "LLR ARCHITECTS,INC",
+    "servicePerformed": "",
+    "location": "HOLLYWOOD, FL",
+    "category": "MULTI-FAMILY",
+    "link": "08-Pictures/1714 VAN BUREN STREET",
+    "coverImage": "1714 VAN BUREN STREET ARCHITECTURE- Page 017.webp"
+  }
+]

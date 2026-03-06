@@ -1,33 +1,31 @@
 import GalleryItem from "./GalleryItem";
-import { projects } from "../utils/projectsConstants";
-import RadioButtons from "./RadioButtons";
+import {
+  getCategorySlugFromParam,
+  getProjectsForCategory,
+} from "../utils/projectsCatalog";
+import { useSearchParams } from "react-router-dom";
 
 import styles from "./Gallery.module.css";
-import { useState } from "react";
 
 function Gallery() {
-  const [filteredProjects, setFilteredProjects] = useState(projects);
-
-  const handleFilterChange = (value) => {
-    if (value === "All") {
-      setFilteredProjects(projects);
-    } else {
-      setFilteredProjects(projects.filter((project) => project.type === value));
-    }
-  };
+  const [searchParams] = useSearchParams();
+  const activeCategory = getCategorySlugFromParam(searchParams.get("category"));
+  const filteredProjects = getProjectsForCategory(activeCategory);
 
   return (
     <section className={styles.galleryContainer}>
-      <div className={styles.galleryFilter}>
-        <RadioButtons onFilterChange={handleFilterChange} />
+      <div className={styles.galleryIntro}>
+        <p>Project Portfolio</p>
       </div>
       <div className={styles.gallery}>
         {filteredProjects.map((project) => (
           <GalleryItem
             key={project.id}
-            image={project.img}
+            image={project.coverImageUrl}
             title={project.name}
             id={project.id}
+            location={project.location}
+            category={project.category.label}
           />
         ))}
       </div>
