@@ -13,6 +13,8 @@ import valueEng from "../assets/images/Value Engineering.jpg";
 import feasibility from "../assets/images/Feasibility Study & Reports.jpg";
 import BuildingInv from "../assets/images/Building Investigations.jpg";
 import structural from "../assets/images/Structural Design.jpg";
+import thresholdInspections from "../assets/images/Threshold Inspections.webp";
+import milestoneInspections from "../assets/images/Milestone Inspections.webp";
 
 export const ROUTES = {
   HOME: "/",
@@ -77,15 +79,6 @@ export const ABOUT_COMPANY = [
 
 export const SERVICES = [
   {
-    id: "civil-engineering-design",
-    title: "Civil Engineering Design",
-    description:
-      "Creating innovative and practical solutions for engineering challenges.",
-    image: engdes,
-    longText:
-      "Our Civil Engineering Design services prioritize delivering innovative solutions tailored to meet project requirements. From roadways to water systems, we handle a wide array of engineering challenges with precision. By integrating advanced modeling tools, we ensure compliance with regulations and maximize efficiency in design execution. We aim to enhance functionality while supporting sustainable development goals.",
-  },
-  {
     id: "structural-design",
     title: "Structural Design",
     description:
@@ -93,6 +86,15 @@ export const SERVICES = [
     image: structural,
     longText:
       "Structural Design is at the core of what we do, focusing on creating reliable frameworks that ensure safety and performance. From high-rise buildings to industrial structures, our team employs cutting-edge techniques to optimize designs. Whether managing complex loads or addressing environmental factors, our designs aim for durability, cost-efficiency, and architectural harmony.",
+  },
+  {
+    id: "civil-engineering-design",
+    title: "Civil Engineering Design",
+    description:
+      "Creating innovative and practical solutions for engineering challenges.",
+    image: engdes,
+    longText:
+      "Our Civil Engineering Design services prioritize delivering innovative solutions tailored to meet project requirements. From roadways to water systems, we handle a wide array of engineering challenges with precision. By integrating advanced modeling tools, we ensure compliance with regulations and maximize efficiency in design execution. We aim to enhance functionality while supporting sustainable development goals.",
   },
   // Kept for reference while the client clarifies whether this service should be deleted or revised.
   // {
@@ -128,5 +130,23 @@ export const SERVICES = [
     image: BuildingInv,
     longText:
       "Building Investigations are essential for ensuring structural safety and optimizing performance. Our experts conduct detailed assessments to identify issues related to wear, compliance, or potential risks. From historical buildings to modern constructions, we provide actionable recommendations that enhance durability, improve safety, and support informed decision-making for renovations or repairs.",
+  },
+  {
+    id: "threshold-inspections",
+    title: "Threshold Inspections",
+    description:
+      "Verifying structural work complies with approved plans, specifications, and code requirements.",
+    image: thresholdInspections,
+    longText:
+      "Our Threshold Inspection services provide qualified review during construction to help verify that structural work is performed in accordance with approved plans, specifications, and applicable code requirements. ASM supports owners, architects, contractors, and public agencies with reliable inspection documentation and practical construction-phase coordination.",
+  },
+  {
+    id: "milestone-inspections",
+    title: "30/40/50-Year & Milestone Inspections",
+    description:
+      "Assessing existing buildings for structural condition, safety, and recertification requirements.",
+    image: milestoneInspections,
+    longText:
+      "ASM provides building recertification and milestone inspection support for existing structures, evaluating visible structural conditions, safety concerns, and repair needs. Our team prepares clear findings and recommendations to help building owners understand requirements and plan responsible maintenance or restoration work.",
   },
 ];
