@@ -1,5 +1,3 @@
-import Instagram from "../assets/icons/instagram";
-import Facebook from "../assets/icons/Facebook";
 import LinkedIn from "../assets/icons/LinkedIn";
 import { HiPhone } from "react-icons/hi2";
 import { HiMail } from "react-icons/hi";
@@ -53,16 +51,14 @@ function Footer() {
               </li>
             ))}
           </ul>
-          <div className={styles.socialLink}>
-            <a>
-              <Instagram />
-            </a>
-            <a>
-              <Facebook />
-            </a>
-            <a>
+          <div className={styles.socialLink} aria-label="Social media links">
+            <span
+              className={styles.pendingSocialLink}
+              aria-label="LinkedIn link pending"
+              title="LinkedIn link pending"
+            >
               <LinkedIn />
-            </a>
+            </span>
           </div>
         </div>
         <div className={styles.getInTouch}>

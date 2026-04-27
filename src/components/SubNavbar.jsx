@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import LinkedIn from "../assets/icons/LinkedIn";
 import styles from "./SubNavbar.module.css";
 
 function SubNavbar() {
@@ -16,19 +17,14 @@ function SubNavbar() {
             Threshold/Special Inspections
           </NavLink>
         </div>
-        <div className={styles.socialIcons}>
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-            <i className="fab fa-facebook-f"></i>
-          </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-            <i className="fab fa-twitter"></i>
-          </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-            <i className="fab fa-linkedin-in"></i>
-          </a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-            <i className="fab fa-instagram"></i>
-          </a>
+        <div className={styles.socialIcons} aria-label="Social media links">
+          <span
+            className={styles.pendingSocialLink}
+            aria-label="LinkedIn link pending"
+            title="LinkedIn link pending"
+          >
+            <LinkedIn />
+          </span>
         </div>
       </div>
     </div>

@@ -41,10 +41,24 @@
   gap: 15px;
 }
 
-.socialIcons a {
+.socialIcons a,
+.pendingSocialLink {
   color: white;
   font-size: 16px;
   transition: color 0.3s ease;
+}
+
+.pendingSocialLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+}
+
+.pendingSocialLink svg {
+  width: 100%;
+  height: 100%;
 }
 
 .socialIcons a:hover {

@@ -38,9 +38,16 @@
   margin-top: 55px;
 }
 
-.socialLink a {
+.socialLink a,
+.pendingSocialLink {
   width: 30px;
   height: 30px;
+}
+
+.pendingSocialLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .getInTouch {
