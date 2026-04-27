@@ -40,9 +40,9 @@ export const ABOUT_COMPANY = [
       "Structural and Civil Engineering services for private clients and public agencies.",
   },
   {
-    id: "calculated-inspections",
+    id: "special-inspections",
     icon: <GrUserWorker style={iconStyle} />,
-    title: "Calculated Inspections",
+    title: "Special Inspections",
     subtitle: "We excel at both job-site inspections and stress calculations.",
   },
   {
