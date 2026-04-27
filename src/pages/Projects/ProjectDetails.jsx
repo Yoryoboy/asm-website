@@ -43,11 +43,13 @@ function ProjectDetails() {
       </aside>
       <section className={styles.projectDetailsContent}>
         {selectedImage ? (
-          <img
-            src={selectedImage.src}
-            alt={selectedImage.alt}
-            className={styles.projectImg}
-          />
+          <div className={styles.projectImageFrame}>
+            <img
+              src={selectedImage.src}
+              alt={selectedImage.alt}
+              className={styles.projectImg}
+            />
+          </div>
         ) : (
           <div className={styles.projectPlaceholder}>
             <span>Project gallery coming soon</span>
