@@ -4,7 +4,6 @@ import img2 from "../../assets/images/DJI_0316.webp";
 import img3 from "../../assets/images/Final - Rear.webp";
 import img4 from "../../assets/images/FRONT-02-3D.webp";
 import img5 from "../../assets/images/ginardstudio_smart_brickell_1.webp";
-import img6 from "../../assets/images/M--2.webp";
 import styles from "./WelcomeSection.module.css";
 import { Carousel } from "antd";
 
@@ -50,13 +49,6 @@ function WelcomeSection() {
           <img
             className={styles.welcomeSectionImage}
             src={img5}
-            alt="welcome-image"
-          />
-        </div>
-        <div className={styles.imageWrapper}>
-          <img
-            className={styles.welcomeSectionImage}
-            src={img6}
             alt="welcome-image"
           />
         </div>
