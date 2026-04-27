@@ -7,12 +7,10 @@ import {
 } from "react-icons/hi2";
 
 import engdes from "../assets/images/Engineering Design.jpg";
-import planpre from "../assets/images/Preparation of Plans.jpg";
-import obsadm from "../assets/images/Construction Observation & Administration.jpg";
+// Reserved for the commented Construction Observation & Administration service.
+// import obsadm from "../assets/images/Construction Observation & Administration.jpg";
 import valueEng from "../assets/images/Value Engineering.jpg";
 import feasibility from "../assets/images/Feasibility Study & Reports.jpg";
-import consDocs from "../assets/images/Construction Documents.jpg";
-import cost from "../assets/images/Planning & Cost Estimations.webp";
 import BuildingInv from "../assets/images/Building Investigations.jpg";
 import structural from "../assets/images/Structural Design.jpg";
 
@@ -96,14 +94,15 @@ export const SERVICES = [
     longText:
       "Structural Design is at the core of what we do, focusing on creating reliable frameworks that ensure safety and performance. From high-rise buildings to industrial structures, our team employs cutting-edge techniques to optimize designs. Whether managing complex loads or addressing environmental factors, our designs aim for durability, cost-efficiency, and architectural harmony.",
   },
-  {
-    id: "construction-observation-administration",
-    title: "Construction Observation & Administration",
-    description: "Ensuring quality and compliance during construction phases.",
-    image: obsadm,
-    longText:
-      "Our Construction Observation & Administration services provide oversight to guarantee that projects meet design standards and regulatory requirements. By closely monitoring construction phases, we ensure every detail aligns with approved plans. Our team collaborates with contractors, addresses on-site challenges, and keeps stakeholders informed, ensuring seamless project progression and successful delivery.",
-  },
+  // Kept for reference while the client clarifies whether this service should be deleted or revised.
+  // {
+  //   id: "construction-observation-administration",
+  //   title: "Construction Observation & Administration",
+  //   description: "Ensuring quality and compliance during construction phases.",
+  //   image: obsadm,
+  //   longText:
+  //     "Our Construction Observation & Administration services provide oversight to guarantee that projects meet design standards and regulatory requirements. By closely monitoring construction phases, we ensure every detail aligns with approved plans. Our team collaborates with contractors, addresses on-site challenges, and keeps stakeholders informed, ensuring seamless project progression and successful delivery.",
+  // },
   {
     id: "value-engineering",
     title: "Value Engineering",
@@ -114,38 +113,12 @@ export const SERVICES = [
       "Value Engineering focuses on enhancing project outcomes by identifying opportunities to improve efficiency without compromising quality. Our team evaluates designs, construction methods, and materials to find cost-effective solutions. By integrating client goals and performance requirements, we ensure projects deliver maximum value, achieving both economic and functional excellence.",
   },
   {
-    id: "preparation-of-plans",
-    title: "Preparation of Plans",
-    description: "Developing precise and detailed plans for project execution.",
-    image: planpre,
-    longText:
-      "Preparation of Plans is a crucial stage where attention to detail and accuracy are paramount. Our team develops comprehensive drawings and specifications tailored to each project’s needs. By employing advanced tools and collaborative workflows, we ensure seamless integration between design and construction phases, facilitating efficient execution and reducing potential delays.",
-  },
-  {
     id: "feasibility-study-reports",
     title: "Feasibility Study & Reports",
     description: "Evaluating project viability through comprehensive analysis.",
     image: feasibility,
     longText:
       "Our Feasibility Study & Reports services provide clients with in-depth evaluations of potential projects. We analyze technical, economic, and environmental factors to determine viability. By delivering clear and actionable insights, we empower stakeholders to make informed decisions and mitigate risks, ensuring that projects align with budgetary and strategic objectives.",
-  },
-  {
-    id: "construction-documents",
-    title: "Construction Documents",
-    description:
-      "Creating detailed construction documents for project execution.",
-    image: consDocs,
-    longText:
-      "Construction Documents are the blueprint for successful project execution. We produce detailed plans, specifications, and schedules that guide every construction phase. By incorporating client requirements and regulatory standards, our documents ensure clarity, precision, and efficiency. These deliverables form the foundation for seamless collaboration between design teams and contractors.",
-  },
-  {
-    id: "planning-cost-estimations",
-    title: "Planning & Cost Estimations",
-    description:
-      "Providing accurate and up-to-date cost estimates for project execution.",
-    image: cost,
-    longText:
-      "Planning & Cost Estimations ensure projects stay on track both financially and strategically. Our team develops detailed budgets based on thorough analysis of materials, labor, and timelines. By using advanced estimating tools and market data, we provide accurate projections that enable clients to plan confidently and allocate resources effectively.",
   },
   {
     id: "building-investigations",
