@@ -1,4 +1,6 @@
 .pageHeader {
+  background-color: rgba(255, 255, 255, 0.18);
+  background-blend-mode: screen;
   background-size: cover;
   background-position: center;
   min-height: 270px;

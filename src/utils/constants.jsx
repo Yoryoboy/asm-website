@@ -6,12 +6,12 @@ import {
   HiOutlineWrenchScrewdriver,
 } from "react-icons/hi2";
 
-import engdes from "../assets/images/Engineering Design.jpg";
+import engdes from "../assets/images/Engineering Design.webp";
 import constructionAdministration from "../assets/images/Construction Observation & Administration.jpg";
-import valueEng from "../assets/images/Value Engineering.jpg";
+import valueEng from "../assets/images/Value Engineering Meeting.webp";
 import feasibility from "../assets/images/Feasibility Study & Reports.jpg";
 import BuildingInv from "../assets/images/Building Investigations.jpg";
-import structural from "../assets/images/Structural Design.jpg";
+import structural from "../assets/images/Structural Design.webp";
 import thresholdInspections from "../assets/images/Threshold Inspections.webp";
 import milestoneInspections from "../assets/images/Milestone Inspections.webp";
 

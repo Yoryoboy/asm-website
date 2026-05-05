@@ -198,6 +198,17 @@
     "coverImage": "RENDER 1.webp"
   },
   {
+    "index": 20,
+    "name": "GRIFFING",
+    "id": "griffing",
+    "architect": "Design Tech International",
+    "servicePerformed": "Structural design engineering services for an 8-story condominium, including parking spaces in the basement",
+    "location": "North Miami, FL",
+    "category": "MULTI-FAMILY",
+    "link": "08-Pictures/GRIFFIN",
+    "coverImage": "01-PRINCIPAL-new.webp"
+  },
+  {
     "index": 21,
     "name": "LUDLAM PLAZA",
     "id": "ludlam-plaza",
@@ -207,6 +218,28 @@
     "category": "MIX USED",
     "link": "08-Pictures/LUDLAM PLAZA",
     "coverImage": "01.webp"
+  },
+  {
+    "index": 22,
+    "name": "MALL 163",
+    "id": "mall-163",
+    "architect": "Design Tech International",
+    "servicePerformed": "Façade replacing and renovation",
+    "location": "North Miami, FL",
+    "category": "COMMERCIAL",
+    "link": "08-Pictures/MALL 163",
+    "coverImage": "01.webp"
+  },
+  {
+    "index": 23,
+    "name": "LUX GROVE",
+    "id": "lux-grove",
+    "architect": "Design Tech International",
+    "servicePerformed": "Structural design engineering services for multifamily development, including concrete structures with masonry walls, concrete slab floors, and gable roof.",
+    "location": "Homestead, FL",
+    "category": "MULTI-FAMILY",
+    "link": "08-Pictures/LUX GROVE",
+    "coverImage": "01-PRINCIPAL.webp"
   },
   {
     "index": 27,
@@ -235,7 +268,7 @@
     "name": "1714 VAN BUREN STREET",
     "id": "1714-van-buren-street",
     "architect": "LLR ARCHITECTS,INC",
-    "servicePerformed": "",
+    "servicePerformed": "Structural design engineering services for 10 units multi-family development. Including a concrete structure with a precast joist and a concrete shear wall.",
     "location": "Hollywood, FL",
     "category": "MULTI-FAMILY",
     "link": "08-Pictures/1714 VAN BUREN STREET",
@@ -246,7 +279,7 @@
     "name": "BRANCHES - EBENEZER UNITED METHODIST CHURCH",
     "id": "branches",
     "architect": "WHA Design",
-    "servicePerformed": "",
+    "servicePerformed": "Structural design engineering services for renovating and adding to the existing church, including new educational spaces and multipurpose rooms, in combination with a steel and masonry structure with metal joists and a concrete roof.",
     "location": "Miami, FL",
     "category": "EDUCATIONAL",
     "link": "08-Pictures/BRANCHES",

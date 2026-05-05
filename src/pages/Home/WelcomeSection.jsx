@@ -62,7 +62,7 @@ function WelcomeSection() {
           with innovative civil engineering.
         </h2>
 
-        <Link to="/services">VIEW MORE</Link>
+        <Link to="/projects">VIEW MORE</Link>
       </div>
     </section>
   );

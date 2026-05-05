@@ -64,7 +64,7 @@ const skillHighlights = [
 ];
 
 const licenses = [
-  "Registered Professional Engineer – State of Florida (NCEES, Structural I)",
+  "Registered Professional Engineer – State of Florida (Structural I)",
   "Registered Professional Engineer – Province of Ontario, Canada",
   "Registered Threshold Inspector – State of Florida",
   "LEED Accredited Professional (LEED AP BD+C) – USGBC",
