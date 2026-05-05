@@ -7,8 +7,7 @@ import {
 } from "react-icons/hi2";
 
 import engdes from "../assets/images/Engineering Design.jpg";
-// Reserved for the commented Construction Observation & Administration service.
-// import obsadm from "../assets/images/Construction Observation & Administration.jpg";
+import constructionAdministration from "../assets/images/Construction Observation & Administration.jpg";
 import valueEng from "../assets/images/Value Engineering.jpg";
 import feasibility from "../assets/images/Feasibility Study & Reports.jpg";
 import BuildingInv from "../assets/images/Building Investigations.jpg";
@@ -96,15 +95,15 @@ export const SERVICES = [
     longText:
       "Our Civil Engineering Design services prioritize delivering innovative solutions tailored to meet project requirements. From roadways to water systems, we handle a wide array of engineering challenges with precision. By integrating advanced modeling tools, we ensure compliance with regulations and maximize efficiency in design execution. We aim to enhance functionality while supporting sustainable development goals.",
   },
-  // Kept for reference while the client clarifies whether this service should be deleted or revised.
-  // {
-  //   id: "construction-observation-administration",
-  //   title: "Construction Observation & Administration",
-  //   description: "Ensuring quality and compliance during construction phases.",
-  //   image: obsadm,
-  //   longText:
-  //     "Our Construction Observation & Administration services provide oversight to guarantee that projects meet design standards and regulatory requirements. By closely monitoring construction phases, we ensure every detail aligns with approved plans. Our team collaborates with contractors, addresses on-site challenges, and keeps stakeholders informed, ensuring seamless project progression and successful delivery.",
-  // },
+  {
+    id: "construction-administration",
+    title: "Construction Administration",
+    description:
+      "Supporting construction-phase coordination, compliance, and documentation.",
+    image: constructionAdministration,
+    longText:
+      "Our Construction Administration services support the construction phase through coordination, documentation, and review of project requirements. ASM helps owners, architects, and contractors address field questions, monitor alignment with approved documents, and keep construction moving with practical engineering support.",
+  },
   {
     id: "value-engineering",
     title: "Value Engineering",
@@ -142,7 +141,7 @@ export const SERVICES = [
   },
   {
     id: "milestone-inspections",
-    title: "30/40/50-Year & Milestone Inspections",
+    title: "30/40/50-Year Recertification and Milestone Inspections",
     description:
       "Assessing existing buildings for structural condition, safety, and recertification requirements.",
     image: milestoneInspections,

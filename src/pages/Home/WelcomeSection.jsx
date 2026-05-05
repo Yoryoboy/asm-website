@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import img1 from "../../assets/images/Delmar-3.webp";
-import img2 from "../../assets/images/DJI_0316.webp";
-import img3 from "../../assets/images/Final - Rear.webp";
-import img4 from "../../assets/images/FRONT-02-3D.webp";
-import img5 from "../../assets/images/ginardstudio_smart_brickell_1.webp";
+import img1 from "../../assets/images/ginardstudio_smart_brickell_1.webp";
+import img2 from "../../assets/images/Delmar-3.webp";
+import img3 from "../../assets/images/DJI_0316.webp";
+import img4 from "../../assets/images/Final - Rear.webp";
+import img5 from "../../assets/images/FRONT-02-3D.webp";
 import styles from "./WelcomeSection.module.css";
 import { Carousel } from "antd";
 
