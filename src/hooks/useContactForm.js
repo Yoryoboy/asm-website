@@ -14,7 +14,7 @@ function useContactForm() {
 
   const sendForm = (form, formElement) => {
     // TODO: Replace with actual Web3Forms Access Key
-    const WEB3FORMS_ACCESS_KEY = "YOUR_ACCESS_KEY_HERE";
+    const WEB3FORMS_ACCESS_KEY = "ca99d6ba-231d-47e1-8045-150da5bbac7d";
 
     const payload = {
       ...form,
@@ -41,7 +41,8 @@ function useContactForm() {
         } else {
           openNotificationWithIcon("error", {
             title: "Error",
-            message: data.message || "Something went wrong. Please try again later",
+            message:
+              data.message || "Something went wrong. Please try again later",
           });
         }
         setIsLoading(false);
