@@ -38,16 +38,18 @@
   margin-top: 55px;
 }
 
-.socialLink a,
-.pendingSocialLink {
-  width: 30px;
-  height: 30px;
-}
-
-.pendingSocialLink {
+.socialLink a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  width: 30px;
+  height: 30px;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.socialLink a:hover {
+  color: #ff5200;
 }
 
 .getInTouch {

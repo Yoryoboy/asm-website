@@ -1,5 +1,5 @@
 .pageHeader {
-  background-color: rgba(255, 255, 255, 0.18);
+  background-color: rgba(255, 255, 255, 0.35);
   background-blend-mode: screen;
   background-size: cover;
   background-position: center;
@@ -8,6 +8,7 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  filter: brightness(1.15);
 }
 
 .pageHeader h1 {
@@ -16,6 +17,7 @@
   letter-spacing: 0.1em;
   color: #ffffff;
   text-transform: uppercase;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
 }
 
 @media (max-width: 900px) {

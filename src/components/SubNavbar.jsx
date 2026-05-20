@@ -18,13 +18,15 @@ function SubNavbar() {
           </NavLink>
         </div>
         <div className={styles.socialIcons} aria-label="Social media links">
-          <span
-            className={styles.pendingSocialLink}
-            aria-label="LinkedIn link pending"
-            title="LinkedIn link pending"
+          <a
+            href="https://www.linkedin.com/company/asm-consulting-engineers/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            title="LinkedIn"
           >
             <LinkedIn />
-          </span>
+          </a>
         </div>
       </div>
     </div>
