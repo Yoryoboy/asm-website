@@ -13,24 +13,38 @@ function useContactForm() {
   };
 
   const sendForm = (form, formElement) => {
-    fetch("https://formsubmit.co/ajax/93jads@gmail.com", {
+    // TODO: Replace with actual Web3Forms Access Key
+    const WEB3FORMS_ACCESS_KEY = "YOUR_ACCESS_KEY_HERE";
+
+    const payload = {
+      ...form,
+      access_key: WEB3FORMS_ACCESS_KEY,
+    };
+
+    fetch("https://api.web3forms.com/submit", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
       },
-      body: JSON.stringify(form),
+      body: JSON.stringify(payload),
     })
       .then((response) => response.json())
       .then((data) => {
-        openNotificationWithIcon("success", {
-          ...data,
-          title: "Message Sent!",
-          message:
-            "Thank you for reaching out. We’ve received your message and will get back to you shortly",
-        });
+        if (data.success) {
+          openNotificationWithIcon("success", {
+            title: "Message Sent!",
+            message:
+              "Thank you for reaching out. We’ve received your message and will get back to you shortly",
+          });
+          formElement.reset();
+        } else {
+          openNotificationWithIcon("error", {
+            title: "Error",
+            message: data.message || "Something went wrong. Please try again later",
+          });
+        }
         setIsLoading(false);
-        formElement.reset();
       })
       .catch((error) => {
         openNotificationWithIcon("error", {
