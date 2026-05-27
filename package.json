@@ -6,7 +6,7 @@
   "scripts": {
     "catalog:normalize": "node scripts/normalize-project-catalog.mjs",
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && node scripts/prerender-seo.mjs",
     "lint": "eslint .",
     "preview": "vite preview"
   },

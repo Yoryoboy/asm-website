@@ -1,57 +1,57 @@
 .servicesVerticalNavbar {
-  border-left: 1px solid #e1e1e1;
-  padding: 0px 60px;
+	border-left: 1px solid #e1e1e1;
+	padding: 0px 60px;
 }
 
-.servicesVerticalNavbar h1 {
-  margin-top: 0;
-  font-size: 24px;
-  font-weight: 400;
-  letter-spacing: 0.1em;
-  color: #151515;
-  text-transform: uppercase;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #e1e1e1;
+.servicesVerticalNavbar h2 {
+	margin-top: 0;
+	font-size: 24px;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+	color: #151515;
+	text-transform: uppercase;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #e1e1e1;
 }
 
 .servicesVerticalNavbarList {
-  list-style: none;
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
+	list-style: none;
+	padding-left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 .servicesVerticalNavbarList li {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  gap: 25px;
-  padding: 20px 0px;
-  border-bottom: 1px solid #e1e1e1;
-  cursor: pointer;
-  text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	gap: 25px;
+	padding: 20px 0px;
+	border-bottom: 1px solid #e1e1e1;
+	cursor: pointer;
+	text-decoration: none;
 }
 
 .servicesVerticalNavbarList li a {
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #151515;
-  text-decoration: none;
-  transition: all 0.3s ease;
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: #151515;
+	text-decoration: none;
+	transition: all 0.3s ease;
 }
 
 .servicesVerticalNavbarList li a:global(.active) {
-  color: #ff5200;
+	color: #ff5200;
 }
 
 .servicesVerticalNavbarList li a:hover {
-  color: #ff5200;
+	color: #ff5200;
 }
 
 @media (max-width: 700px) {
-  .servicesVerticalNavbar {
-    display: none;
-  }
+	.servicesVerticalNavbar {
+		display: none;
+	}
 }

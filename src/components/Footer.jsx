@@ -5,16 +5,8 @@ import { scrollToTop } from "../utils/helperFunctions";
 
 import styles from "./Footer.module.css";
 import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
 
 function Footer() {
-	const navigate = useNavigate();
-
-	const handleClick = (link) => {
-		navigate(link);
-		scrollToTop();
-	};
-
 	const quickLinks = [
 		{
 			title: "Home",
@@ -42,11 +34,13 @@ function Footer() {
 		<footer className={styles.footer}>
 			<div className={styles.footerContent}>
 				<div className={styles.quickLinks}>
-					<h1>Quick Links</h1>
+					<h2>Quick Links</h2>
 					<ul>
 						{quickLinks.map((link) => (
-							<li key={link.title} onClick={() => handleClick(link.link)}>
-								{link.title}
+							<li key={link.title}>
+								<Link to={link.link} onClick={() => scrollToTop()}>
+									{link.title}
+								</Link>
 							</li>
 						))}
 					</ul>
@@ -63,7 +57,7 @@ function Footer() {
 					</div>
 				</div>
 				<div className={styles.getInTouch}>
-					<h1>Get in Touch</h1>
+					<h2>Get in Touch</h2>
 					<ul>
 						<li>
 							<aside className={styles.getInTouchIcon}>

@@ -1,64 +1,64 @@
 .serviceDetails {
-  display: flex;
-  align-items: start;
-  justify-content: center;
-  padding-top: 80px;
-  padding-left: 180px;
-  padding-bottom: 80px;
-  gap: 40px;
+	display: flex;
+	align-items: start;
+	justify-content: center;
+	padding-top: 80px;
+	padding-left: 180px;
+	padding-bottom: 80px;
+	gap: 40px;
 }
 
 .serviceImg {
-  aspect-ratio: 16/9;
-  max-width: 560px;
-  height: 250px;
-  object-fit: cover;
+	aspect-ratio: 16 / 9;
+	max-width: 560px;
+	height: 250px;
+	object-fit: cover;
 }
-.serviceDetails h1 {
-  max-width: 560px;
-  margin-top: 40px;
-  font-size: 30px;
-  font-weight: 400;
-  letter-spacing: 0.1em;
-  color: #151515;
-  text-transform: uppercase;
+.serviceDetails h2 {
+	max-width: 560px;
+	margin-top: 40px;
+	font-size: 30px;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+	color: #151515;
+	text-transform: uppercase;
 }
 
 .serviceDetails p {
-  margin-top: 24px;
-  font-size: 18px;
-  line-height: 1.6;
-  color: #777777;
-  letter-spacing: 0.075em;
-  font-weight: 400;
-  margin-bottom: 40px;
-  max-width: 700px;
-  overflow-wrap: break-word;
+	margin-top: 24px;
+	font-size: 18px;
+	line-height: 1.6;
+	color: #777777;
+	letter-spacing: 0.075em;
+	font-weight: 400;
+	margin-bottom: 40px;
+	max-width: 700px;
+	overflow-wrap: break-word;
 }
 
 @media (max-width: 900px) {
-  .serviceDetails {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  .serviceDetails h1 {
-    font-size: 24px;
-    width: auto;
-  }
-  .serviceDetails p {
-    font-size: 16px;
-    width: auto;
-  }
+	.serviceDetails {
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.serviceDetails h2 {
+		font-size: 24px;
+		width: auto;
+	}
+	.serviceDetails p {
+		font-size: 16px;
+		width: auto;
+	}
 }
 
 @media (max-width: 700px) {
-  .serviceDetails {
-    flex-direction: column;
-    width: 100%;
-  }
-  .serviceDetails img {
-    max-width: 100%;
-  }
+	.serviceDetails {
+		flex-direction: column;
+		width: 100%;
+	}
+	.serviceDetails img {
+		max-width: 100%;
+	}
 }
