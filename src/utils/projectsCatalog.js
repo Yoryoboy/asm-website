@@ -100,17 +100,20 @@ export const getCategorySlugFromParam = (slug) =>
   categoryBySlug.has(slug) ? slug : ALL_PROJECTS_CATEGORY.slug;
 
 export const projectsCatalog = rawProjects
-  .filter(
-    (project) =>
+  .reduce((catalog, project) => {
+    const shouldInclude =
       project.name &&
       project.coverImage &&
       (project.link ||
         project.architect ||
         project.servicePerformed ||
         project.location ||
-        project.category)
-  )
-  .map((project) => {
+        project.category);
+
+    if (!shouldInclude) {
+      return catalog;
+    }
+
     const folderKey = normalizePath(project.link);
     const folderImages = imagesByFolder.get(folderKey) ?? [];
     const images = folderImages.map((image, index) => ({
@@ -129,15 +132,17 @@ export const projectsCatalog = rawProjects
       null;
     const category = resolveCategory(project.category);
 
-    return {
+    catalog.push({
       ...project,
       category,
       images,
       coverImage,
       coverImageUrl: coverImage?.src ?? null,
       hasImages: images.length > 0,
-    };
-  })
+    });
+
+    return catalog;
+  }, [])
   .sort((left, right) => left.index - right.index);
 
 export const getProjectsForCategory = (categorySlug) => {

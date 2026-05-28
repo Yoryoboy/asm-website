@@ -1,5 +1,5 @@
 export const SITE_NAME = "ASM Consulting Engineers";
-export const SITE_URL = "https://asmeng1.com";
+const SITE_URL = "https://asmeng1.com";
 export const DEFAULT_TITLE =
 	"Structural & Civil Engineering in Miami | ASM Consulting Engineers";
 export const DEFAULT_DESCRIPTION =

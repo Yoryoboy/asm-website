@@ -8,6 +8,8 @@ import {
 	createAbsoluteUrl,
 } from "./siteMetadata";
 
+const EMPTY_STRUCTURED_DATA = [];
+
 const normalizeImageUrl = (image) => {
 	if (!image) {
 		return DEFAULT_OG_IMAGE;
@@ -52,7 +54,7 @@ function Seo({
 	path = "/",
 	image = DEFAULT_OG_IMAGE,
 	robots = "index, follow",
-	structuredData = [],
+	structuredData = EMPTY_STRUCTURED_DATA,
 }) {
 	useEffect(() => {
 		const canonicalUrl = createAbsoluteUrl(path);
