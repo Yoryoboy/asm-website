@@ -1,17 +1,11 @@
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import logo from "../assets/images/logo.png";
 
 import styles from "./Logo.module.css";
 
 function Logo() {
-  const navigate = useNavigate();
-
-  const handleClick = () => {
-    navigate("/");
-  };
-
   return (
-    <div className={styles.navbarBrand} onClick={handleClick}>
+    <Link className={styles.navbarBrand} to="/" aria-label="Go to home page">
       <img
         src={logo}
         alt="ASM Consulting Engineers logo"
@@ -23,7 +17,7 @@ function Logo() {
         </span>
         <span className={styles.navbarSubtitle}> Engineers</span>
       </div>
-    </div>
+    </Link>
   );
 }
 

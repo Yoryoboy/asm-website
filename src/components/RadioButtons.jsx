@@ -30,7 +30,7 @@ function RadioButtons({
       },
     ];
 
-  function handleChange(e) {
+  function handleFilterOptionChange(e) {
     onFilterChange(e.target.value);
   }
 
@@ -51,7 +51,7 @@ function RadioButtons({
         defaultValue={defaultValue}
         value={value}
         optionType="button"
-        onChange={handleChange}
+        onChange={handleFilterOptionChange}
       />
     </ConfigProvider>
   );
