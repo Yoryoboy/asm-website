@@ -19,7 +19,7 @@ export function BackButton() {
   };
 
   return (
-    <button onClick={handleBack} style={styles.button}>
+    <button type="button" onClick={handleBack} style={styles.button}>
       &larr; GO BACK
     </button>
   );

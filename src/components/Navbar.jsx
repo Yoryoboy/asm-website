@@ -33,6 +33,7 @@ function Navbar() {
     <nav className={styles.navbar} ref={menuRef}>
       <Logo />
       <button
+        type="button"
         className={styles.burgerMenu}
         onClick={toggleMenu}
         aria-label="Toggle menu"

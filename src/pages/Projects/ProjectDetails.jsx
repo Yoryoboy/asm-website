@@ -11,17 +11,18 @@ import styles from "./ProjectDetails.module.css";
 function ProjectDetails() {
 	const { id } = useParams();
 	const project = getProjectById(id);
-	const [selectedImage, setSelectedImage] = useState(
-		project?.coverImage ?? null,
+	const [selectedImageId, setSelectedImageId] = useState(
+		project?.coverImage?.id ?? null,
 	);
 
 	useEffect(() => {
 		scrollToTop();
 	}, [id]);
 
-	useEffect(() => {
-		setSelectedImage(project?.coverImage ?? null);
-	}, [project]);
+	const selectedImage =
+		project?.images.find((image) => image.id === selectedImageId) ??
+		project?.coverImage ??
+		null;
 
 	if (!project) {
 		return (
@@ -67,7 +68,7 @@ function ProjectDetails() {
 								className={`${styles.projectThumb} ${
 									selectedImage?.id === image.id ? styles.activeThumb : ""
 								}`}
-								onClick={() => setSelectedImage(image)}
+								onClick={() => setSelectedImageId(image.id)}
 							>
 								<img src={image.src} alt={image.alt} />
 							</button>

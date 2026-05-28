@@ -6,22 +6,35 @@ import { SERVICES } from "../utils/constants";
 
 import styles from "./OfferCarousel.module.css";
 
+function getItemsPerPage() {
+  if (window.innerWidth <= 700) {
+    return 1;
+  }
+
+  if (window.innerWidth <= 900) {
+    return 2;
+  }
+
+  return 3;
+}
+
 function OfferCarousel() {
-  const [itemsPerPage, setItemsPerPage] = useState(3);
+  const [itemsPerPage, setItemsPerPage] = useState(() => getItemsPerPage());
 
   useEffect(() => {
     function handleResize() {
-      if (window.innerWidth <= 700) {
-        setItemsPerPage(1); // Móvil: 1 elemento
-      } else if (window.innerWidth <= 900) {
-        setItemsPerPage(2); // Tablets: 2 elementos
-      } else {
-        setItemsPerPage(3); // Escritorio: 3 elementos
-      }
+      const nextItemsPerPage = getItemsPerPage();
+
+      setItemsPerPage((prevItemsPerPage) => {
+        if (prevItemsPerPage === nextItemsPerPage) {
+          return prevItemsPerPage;
+        }
+
+        return nextItemsPerPage;
+      });
     }
 
     window.addEventListener("resize", handleResize);
-    handleResize(); // Llama al resize al cargar
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);
@@ -30,8 +43,15 @@ function OfferCarousel() {
 
   return (
     <Carousel autoplay>
-      {groupedItems.map((group, index) => (
-        <div key={index} className={styles.offerCarouselItem}>
+      {groupedItems.map((group) => {
+        const firstItemId = group[0]?.id ?? "group-start";
+        const lastItemId = group[group.length - 1]?.id ?? "group-end";
+
+        return (
+          <div
+            key={`${firstItemId}-${lastItemId}`}
+            className={styles.offerCarouselItem}
+          >
           {group.map((item) => (
             <CarouselItem
               key={item.id}
@@ -41,8 +61,9 @@ function OfferCarousel() {
               id={item.id}
             />
           ))}
-        </div>
-      ))}
+          </div>
+        );
+      })}
     </Carousel>
   );
 }

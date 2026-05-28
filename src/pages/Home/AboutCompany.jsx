@@ -6,10 +6,10 @@ function AboutCompany() {
   return (
     <section className={styles.aboutCompany}>
       <div className={styles.container}>
-        {ABOUT_COMPANY.map((feature, index) => {
+        {ABOUT_COMPANY.map((feature) => {
           return (
             <FeatureCard
-              key={index}
+              key={feature.id}
               icon={feature.icon}
               title={feature.title}
               subtitle={feature.subtitle}
